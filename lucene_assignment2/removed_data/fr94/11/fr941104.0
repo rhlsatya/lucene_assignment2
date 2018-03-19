@@ -1,0 +1,2408 @@
+<DOC>
+<DOCNO> FR941104-0-00001 </DOCNO>
+<PARENT> FR941104-0-00001 </PARENT>
+<TEXT>
+ 
+
+
+
+
+
+
+Federal Register
+
+  Vol. 59, No. 213  Friday, November 4, 1994  Rules and Regulations
+
+
+Vol. 59, No. 213 
+
+
+Friday, November 4, 1994
+
+
+
+
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00002 </DOCNO>
+<PARENT> FR941104-0-00001 </PARENT>
+<TEXT>
+ 
+
+DEPARTMENT OF TRANSPORTATION 
+
+
+
+Federal Aviation Administration
+
+
+
+
+
+
+
+
+
+Airworthiness Directives; Hamilton Standard 14RF, 247F, 14SF, and 
+6/5500/F Series Propellers 
+
+
+
+<AGENCY>
+AGENCY:
+
+ Federal Aviation Administration, DOT.
+
+
+
+</AGENCY>
+<ACTION>
+ACTION:
+
+ Final rule.
+
+
+
+
+</ACTION>
+<SUMMARY>
+SUMMARY:
+
+ This amendment supersedes an existing airworthiness directive (AD), applicable to Hamilton Standard 14RF, 247F,
+14SF, and 6/5500/F (formerly Hamilton Standard/British Aerospace 6/5500/F) series propellers, that currently
+requires initial and repetitive inspections of the propeller control unit (PCU) servo ballscrew internal spline
+(BIS) teeth for wear, and replacement, if necessary, of PCU servo BIS assemblies. This amendment increases the repetitive
+inspection interval from 500 to 1,500 hours time in service (TIS) since last inspection for propellers that have a
+ballscrew quill damper installed. This amendment is prompted by the availability of improved hardware that restricts
+quill motion and enhances the lubrication of the BIS and significantly reduces BIS wear. The actions specified by
+this AD are intended to prevent inability to control the propeller blade angle due to tooth wear in the PCU servo BIS
+assembly.
+
+
+
+</SUMMARY>
+<SUPPLEM>
+SUPPLEMENTARY INFORMATION:
+
+ A proposal to amend part 39 of the Federal Aviation Regulations (14 CFR part 39) by superseding AD 93-16-02,
+Amendment 39-8659 (58 FR 44441, August 23, 1993), which is applicable to Hamilton Standard 14RF, 247F, 14SF,
+and 6/5500/F (formerly Hamilton Standard/British Aerospace 6/5500/F) series propellers, was published in the
+
+
+Federal Register
+
+ on May 27, 1994 (59 FR 27510). That action proposed to increase the repetitive inspection interval from 500 to 1,500
+hours time in service (TIS) since last inspection for propellers that have a ballscrew quill damper installed. 
+
+
+
+Interested persons have been afforded an opportunity to participate in the making of this amendment. Due consideration
+has been given to the comments received. 
+
+Seven commenters concur with the rule as proposed. 
+
+One commenter concurs with the proposal to extend the repetitive inspection interval from 500 to 1,500 hours TIS,
+but also states that paragraph (a)(5) of the NPRM requires inspection at 1,500 hours TIS if a damper is installed, but
+previously ``new'' PCU's were not required to be inspected until 1,800 hours TIS since new. The commenter further
+states that this interval is not consistent since it is a decrease of 300 hours with the improved hardware, and recommends
+the interval to be extended to 1,800 hours TIS for new PCU's. The FAA concurs and has revised this final rule accordingly.
+
+
+The commenter also recommends the following changes to Appendix 1 of the NPRM: 
+
+The commenter states that the date of the damper installation should not be required since those receiving a ``new''
+PCU or one from a repair station where the damper was installed may not have access to the actual installation date.
+What should be required is an answer to the question, ``Damper installed?'' (answer either ``Yes'' or ``No''), and
+if ``Yes'', and the indication of whether it was installed ``at this inspection'' or ``previously.'' The FAA concurs
+and has revised this final rule accordingly. 
+
+The commenter states that the requirement to list the aircraft model is not required provided the PCU part number is
+complete with the dash or ``A'' number. The FAA concurs and has revised this final rule accordingly. 
+
+The commenter states that blanks are not needed for the items ``Estimated Time on PCU'' and ``Actual Time on PCU.''
+What is needed is an indication as to which one of those statements applies to the following: ``Time Since New (hours)''
+and ``Time Since Last Ballscrew Inspection/Repair (hours).'' The FAA concurs and has revised this final rule accordingly.
+
+
+The commenter states that there is no requirement to indicate (a reminder to complete) completion of the ``pull check''
+of the PCU quill after it is reinstalled. The FAA concurs and has added this item to Appendix 1 of this final rule. 
+
+
+</SUPPLEM>
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00003 </DOCNO>
+<PARENT> FR941104-0-00001 </PARENT>
+<TEXT>
+ 
+
+Two commenters indicate that the installation of the damper had merit and should reduce the PCU's vulnerability to
+wear. However, the commenters believe that the inspection interval should not be extended to 1,500 hours TIS for the
+following reasons: 
+
+The first commenter states that the root cause or single reason for the ballscrew internal spline wear has not been
+identified. The Original Equipment Manufacturer (OEM) bench test of the modified ballscrew internal spline quill
+installation does not demonstrate a test that duplicates actual operation; e.g., there is retaining wire wear due
+to axial preload from the damper. Also, currently there is inadequate scientific basis for reliance on the test data
+as there is insufficient field experience data. 
+
+The second commenter also states that the specific cause of wear has not been positively identified. The proposed
+modification does not correct the negative failure modes in the PCU should a wear induced failure occur. Finally,
+this commenter expresses concern that the field data used to justify the increased inspection interval is being collected
+only from a small percentage of units in operation. 
+
+The FAA does not concur with these comments. The FAA has researched these issues and reviewed the data from numerous
+tests and investigations that have been conducted to determine the cause of extreme wear when it occurs on a very small
+number of splines in service. The FAA has determined that by these tests and investigations a number of factors contribute
+to how or if the spline joint will wear. These factors include: 
+
+Magnitude and direction of vibratory environment. 
+
+How well the spline joint is lubricated. 
+
+Motion of elements within the joint due to stack up of clearances. 
+Thickness of chrome plating on spline teeth. 
+
+The FAA has therefore determined that there is no single factor for wear of this complex joint. However, the major contributors
+of the listed factors have been found to be lubrication and axial motion. Laboratory tests and controlled field service
+data has proven the damper reduces the wear factor by well over 20 times the rate before its installation. 
+
+The retaining wire wear is not a phenomenon associated with the damper introduction. The retaining wires generally
+show some degree of marking (mainly dents in the wire) from the flat end of the ballscrew spline teeth bearing on the
+round wire. This marking occurs on retaining wires on PCU's with and without dampers installed. After an initial ``Seating''
+of the parts, the retaining wire continues to operate without distress. 
+
+Currently, the FAA has reported data from high time controlled field service units in multiple model installations
+to have accumulated over 2,138 hours TIS with the same damper installed. In addition, the damper modification has
+been available to operators since January 1, 1994. The manufacturer has shipped over 2,800 modification kits and
+has conservatively estimated that over 300,000 hours of field time has been logged by operators with the modification
+installed. 
+
+Based on the investigative reports, satisfactory field inspection data, and improved wear factors resulting from
+the installed damper modification, the FAA has determined that a negative failure mode should not occur within the
+new inspection interval of 1,500 hours TIS. The FAA has therefore adopted the inspection interval stated in the NPRM.
+
+
+After careful review of the available data, including the comments noted above, the FAA has determined that air safety
+and the public interest require the adoption of the rule with the changes described previously. The FAA has determined
+that these changes will neither increase the economic burden on any operator nor increase the scope of the AD. 
+
+
+
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00004 </DOCNO>
+<PARENT> FR941104-0-00001 </PARENT>
+<TEXT>
+ 
+
+
+
+There are approximately 2,506 propellers of the affected design in the worldwide fleet. The FAA estimates that 1,150
+propellers installed on aircraft of U.S. registry will be affected by this AD, that it will take approximately 1.5
+work hours per propeller to accomplish the required actions, and that the average labor rate is $55 per work hour. Based
+on these figures, and on the average utilization rate of 2,000 hours TIS per year equating to 4 inspections, the total
+cost impact of the current AD per year on U.S. operators is estimated to be $379,500. However, based on an average utilization
+rate of 2,000 hours TIS per year, this superseding AD will eliminate 2.7 inspections per year per propeller, resulting
+in an approximate yearly cost savings to U.S. operators of $256,163. 
+
+The regulations adopted herein will not have substantial direct effects on the States, on the relationship between
+the national government and the States, or on the distribution of power and responsibilities among the various levels
+of government. Therefore, in accordance with Executive Order 12612, it is determined that this final rule does not
+have sufficient federalism implications to warrant the preparation of a Federalism Assessment. 
+
+For the reasons discussed above, I certify that this action (1) is not a ``significant regulatory action'' under Executive
+Order 12866; (2) is not a ``significant rule'' under DOT Regulatory Policies and Procedures (44 FR 11034, February
+26, 1979); and (3) will not have a significant economic impact, positive or negative, on a substantial number of small
+entities under the criteria of the Regulatory Flexibility Act. A final evaluation has been prepared for this action
+and it is contained in the Rules Docket. A copy of it may be obtained from the Rules Docket at the location provided under
+the caption 
+
+ADDRESSES. 
+
+
+
+List of Subjects in 14 CFR Part 39 
+
+
+
+Air Transportation, Aircraft, Aviation safety, Incorporation by reference, Safety. 
+
+
+
+Adoption of the Amendment 
+
+
+
+Accordingly, pursuant to the authority delegated to me by the Administrator, the Federal Aviation Administration
+amends part 39 of the Federal Aviation Regulations (14 CFR part 39) as follows: 
+
+
+
+PART 39_AIRWORTHINESS DIRECTIVES 
+
+
+
+1. The authority citation for part 39 continues to read as follows: 
+
+
+
+
+
+
+Authority:
+
+ 49 U.S.C. App. 1354(a), 1421 and 1423; 49 U.S.C. 106(g); and 14 CFR 11.89. 
+
+
+
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00005 </DOCNO>
+<PARENT> FR941104-0-00001 </PARENT>
+<TEXT>
+ 
+
+39.13
+
+[Amended] 
+
+
+
+2. Section 39.13 is amended by removing Amendment 
+39-8659 (58 FR 44441, August 23, 1993) and by adding a new airworthiness directive, Amendment 39-9062,
+to read as follows: 
+
+
+
+
+
+
+94-22-12 Hamilton Standard: 
+
+Amendment 39-9062. Docket 94-ANE-26. Supersedes AD 93-16-02, Amendment 39-8659.
+
+
+
+
+
+
+
+Applicability: 
+
+Hamilton Standard Models 14RF-9, 
+14RF-19, 14RF-21, and 14RF-23; 247F-1; 14SF-5, 14SF-7, 
+14SF-11, 14SFL11, 14SF-15, 14SF-17, 14SF-19, 14SF-23; and 6/5500/F propellers installed
+on but not limited to Embraer EMB-120 and EMB-120RT; SAAB-SCANIA SF340B; Aerospatiale ATR42-100,
+ATR42-300, ATR42-320, ATR72, ATR72-210; DeHavilland DHC-8-100 series, DHC-8-300;
+Construcciones Aeronauticas SA (CASA) CN-235 and CN-235-100; Canadair CL215T and CL415; and British
+Aerospace ATP airplanes. 
+
+
+
+Compliance: 
+
+Required as indicated, unless accomplished previously. 
+
+To prevent the inability to control the propeller blade angle due to tooth wear in the propeller control unit (PCU)
+servo ballscrew internal spline (BIS) assembly, accomplish the following: 
+
+(a) Inspect the PCU servo BIS assembly for tooth wear in accordance with the Accomplishment Instructions of the following
+Hamilton Standard Alert Service Bulletins (ASB), all dated April 7, 1994, as applicable: No. 14RF-9-61-A53,
+Revision 5; No. 14RF-19-61-A25, Revision 4; No. 14RF-21-61-A38, Revision 4;
+No. 247F-61-A3, Revision 3; No. 14SF-61-A59, Revision 4; and No. 6/5500/F-61-A11,
+Revision 4; as follows: 
+
+(1) For a PCU with unknown time in service (TIS), and unknown TIS since the last inspection, on the effective date of
+this airworthiness directive (AD), and that does not have a ballscrew quill damper installed, inspect within 200
+hours TIS after the effective date of this AD. 
+
+(2) For a PCU with 1,800 or more hours TIS or unknown TIS on the effective date of this AD, and either has not been inspected,
+or has been inspected more than 500 hours prior to the effective date of this AD, in accordance with the applicable Hamilton
+Standard ASB listed in paragraph (a) of this AD; and that does not have a ballscrew quill damper installed; inspect
+within 200 hours TIS after the effective date of this AD. 
+
+(3) For a PCU with 1,800 or more hours TIS or unknown TIS on the effective date of this AD, and that has been inspected within
+the previous 500 hours TIS in accordance with the applicable Hamilton Standard ASB listed in paragraph (a) of this
+AD, and that does not have a ballscrew quill damper installed, inspect within 500 hours TIS since the last inspection
+in accordance with the applicable Hamilton Standard ASB listed in paragraph (a) of this AD. 
+
+(4) For a PCU with less than 1,800 hours TIS on the effective date of this AD, and that does not have a ballscrew quill damper
+installed, inspect prior to accumulating 1,800 hours TIS, or within 300 hours TIS after the effective date of this
+AD, whichever occurs later. 
+
+(5) For a PCU that has a ballscrew quill damper installed in accordance with the following applicable Hamilton Standard
+Service Bulletins (SB), or previous revisions: No. 14SF-61-67, Revision 2, dated September 27, 1994;
+No. 14RF-9-61-61, Revision 1, dated September 27, 1994; No. 14RF-19-61-29, Revision
+2, dated September 27, 1994; No. 14RF-21-61-48, Revision 2, dated September 27, 1994; No. 247F-61-6,
+Revision 2, dated September 27, 1994; and No. 6/5500/F-61-19, Revision 2, dated September 27, 1994; inspect
+within 1,500 hours TIS since installation of the ballscrew quill damper. 
+
+(6) Thereafter, inspect at intervals described as follows: 
+
+(i) For propellers that have a ballscrew quill damper installed in accordance with the applicable Hamilton Standard
+SB listed in paragraph (a)(5) of this AD, or previous revisions, inspect at intervals not to exceed 1,500 hours TIS
+since the last inspection required by this AD. 
+
+
+
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00006 </DOCNO>
+<PARENT> FR941104-0-00001 </PARENT>
+<TEXT>
+ 
+
+
+
+(ii) For propellers that do not have a ballscrew quill damper installed in accordance with the applicable Hamilton
+Standard SB listed in paragraph (a)(5) of this AD, inspect at intervals not to exceed 500 hours TIS since the last inspection
+required by this AD. 
+(7) If PCU servo BIS teeth are worn beyond the limits specified in the Accomplishment Instructions of the applicable
+ASB's listed in paragraph (a) of this AD, prior to further flight, replace the PCU with a serviceable assembly in accordance
+with the Accomplishment Instructions of the applicable ASB's listed in paragraph (a) of this AD, and thereafter reinspect
+in accordance with paragraphs (a)(6) and (a)(7) of this AD. 
+(b) Report the results of the initial and repetitive inspections required by paragraph (a) of this AD by utilizing
+Appendix 1, ``Ballscrew Inspection Data,'' within 7 days of the inspection to the Manager, Boston Aircraft Certification
+Office, Engine and Propeller Directorate, Aircraft Certification Service, FAA, 12 New England Executive Park,
+Burlington, MA 01803-5299; fax (617) 238-7199. The reporting requirements of this AD terminate on December
+31, 1995. Information collection requirements contained in this regulation have been approved by the Office of Management
+and Budget (OMB) under the provision of the Paperwork Reduction Act of 1980 (44 U.S.C. 3501 
+
+et seq.
+
+) and have been assigned OMB Control Number 2120-0056.
+
+
+Appendix 1_Ballscrew Inspection Data 
+
+
+The following information must be reported and sent as soon as possible but no later than 7 days after inspection to:
+Manager, Boston Aircraft Certification Office, Engine and Propeller Directorate, Aircraft Certification Service,
+Federal Aviation Administration, 12 New England Executive Park, Burlington, MA 01803-5299, Fax: (617) 238-7199.
+
+ 
+
+Operator/Repair Station
+
+
+
+Date of Inspection
+
+
+
+PCU Part Number
+PCU Serial Number
+
+
+
+Date Damper Installed
+
+
+
+Damper Installed (please circle one): YES  NO
+
+ 
+
+If ``YES,'' please circle one: This inspection  Previously
+
+ 
+
+Aircraft Serial Number
+
+
+
+Position (please check one): Left Engine
+
+XXX
+
+ Right Engine
+
+XXX
+
+ 
+
+PCU Times (please circle one): Estimated  Actual
+
+ 
+
+Time Since New (Hours)
+
+
+
+Time Since Last Ballscrew Inspection/Repair (Hours)
+
+XXX
+
+
+
+Inspection (please check one): Accepted
+
+XXX
+
+ *Rejected
+
+XXX
+
+
+
+
+
+*Please indicate in comments if unit was rejected as part of the functional check.
+
+ 
+
+No. of left side teeth with steps
+
+XXX
+
+
+
+No. of right side teeth with steps
+
+XXX
+
+
+
+
+
+Comments:
+
+
+
+Ballscrew Quill Pull Check Completed (please circle one): YES  NO
+
+
+
+
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00007 </DOCNO>
+<PARENT> FR941104-0-00001 </PARENT>
+<TEXT>
+ 
+
+
+
+(c) An alternative method of compliance or adjustment of the compliance time that provides an acceptable level of
+safety may be used if approved by the Manager, Boston Aircraft Certification Office. The request should be forwarded
+through an appropriate FAA Principal Maintenance Inspector, who may add comments and then send it to the Manager,
+Boston Aircraft Certification Office.
+
+ 
+
+
+
+Note: 
+
+Information concerning the existence of approved alternative method of compliance with this AD, if any, may be obtained
+from the Boston Aircraft Certification Office.
+
+ 
+
+(d) Special flight permits may be issued in accordance with sections 21.197 and 21.199 of the Federal Aviation Regulations
+(14 CFR 21.197 and 21.199) to operate the aircraft to a location where the requirements of this AD can be accomplished.
+
+(e) The requirements of this AD shall be done in accordance with the following Hamilton Standard service documents:
+
+
+
+ 
+
+
+This incorporation by reference was approved by the Director of the 
+
+Federal Register
+
+ in accordance with 5 U.S.C. 552(a) and 1 CFR part 51. Copies may be obtained from Hamilton Standard, One Hamilton Road,
+Windsor Locks, CT 06096-1010. Copies may be inspected at the FAA, New England Region, Office of the Assistant
+Chief Counsel, 12 New England Executive Park, Burlington, MA; or at the Office of the 
+
+Federal Register
+
+, 800 North Capitol Street, NW., suite 700, Washington, DC. 
+
+
+(f) This amendment becomes effective on December 5, 1994.
+
+
+
+Issued in Burlington, Massachusetts, on October 26, 1994. 
+
+
+<SIGNER>
+James C. Jones, 
+
+</SIGNER>
+<SIGNJOB>
+Acting Manager, Engine and Propeller Directorate, Aircraft Certification Service. 
+
+</SIGNJOB>
+
+
+
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00008 </DOCNO>
+<PARENT> FR941104-0-00002 </PARENT>
+<TEXT>
+ 
+
+
+
+
+
+
+
+
+
+
+
+Airworthiness Directives; Robinson Helicopter Company Model R22 Series Helicopters 
+
+
+<AGENCY>
+AGENCY:
+
+ Federal Aviation Administration, DOT.
+
+
+</AGENCY>
+<ACTION>
+ACTION:
+
+ Final rule; request for comments.
+
+
+
+
+</ACTION>
+<SUMMARY>
+SUMMARY:
+
+ This document publishes in the 
+
+Federal Register
+
+ an amendment adopting Airworthiness Directive (AD) 94-17-07 which was sent previously to all known U.S.
+owners and operators of Robinson Helicopter Company Model R22 series helicopters by individual letters. This AD
+requires an inspection and repetitive visual checks for slippage of the tail rotor (T/R) drive and replacement of
+the T/R gearbox, if necessary. This amendment is prompted by two incidents in which the T/R output key (key) was not
+installed between the output shaft and the output pinion during assembly of the T/R gearbox. The actions specified
+by this AD are intended to prevent slippage of the T/R drive, loss of directional control, and subsequent loss of control
+of the helicopter.
+
+
+</SUMMARY>
+<SUPPLEM>
+SUPPLEMENTARY INFORMATION:
+
+ On August 25, 1994, the FAA issued Priority Letter AD 94-17-07, applicable to Robinson Helicopter Company
+R22 series helicopters, which requires an inspection and repetitive visual checks for slippage of the tail rotor
+(T/R) drive, and replacement of the T/R gearbox, if necessary. That action was prompted by two incidents in which the
+T/R output key (key) was not installed between the output shaft and the output pinion during assembly of the T/R gearbox.
+The key is required to prevent the output gear from rotating on the output shaft. Both incidents resulted in slippage
+of the T/R drive. On June 2, 1994, Registro Aeronautico Italiano (RAI), the Airworthiness Authority of Italy, issued
+RAI AD No. 94-131 to require a daily inspection to determine if there had been any slippage of the T/R drive between
+the output shaft and the output pinion. This condition, if not corrected, could result in slippage of the T/R drive,
+loss of directional control, and subsequent loss of control of the helicopter. 
+
+
+The FAA has reviewed Robinson Helicopter Company R22 Service Bulletin (SB) 
+
+#
+
+74, dated July 18, 1994, that describes procedures for determining slippage of the T/R drive using a 35-lb. load on
+the T/R blade and checking for correct alignment of dots that have been marked in accordance with SB 
+
+#
+
+74, dated July 18, 1994. The FAA is issuing this AD to require the initial marking of dots and an inspection prior to further
+flight, rather than within the next 20 hours time-in-service (TIS) as specified by SB 
+
+#
+
+74, dated July 18, 1994. 
+Since the unsafe condition described is likely to exist or develop on other Robinson Helicopter Company Model R22
+series helicopters of the same type design, the FAA issued Priority Letter AD 94-17-07 to prevent slippage
+of the T/R drive, loss of directional control, and subsequent loss of control of the helicopter. The AD requires the
+installation of alignment marks, an initial inspection prior to further flight, daily pre-flight visual checks
+for slippage of the T/R drive, and replacement of the T/R gearbox, if necessary. The actions are required to be accomplished
+in accordance with the service bulletin described previously. This AD is considered to be an interim action. The FAA
+is considering further rulemaking to require opening the T/R gearbox and verifying installation of the key as the
+terminating action to this AD. 
+
+
+</SUPPLEM>
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00009 </DOCNO>
+<PARENT> FR941104-0-00002 </PARENT>
+<TEXT>
+ 
+
+Since it was found that immediate corrective action was required, notice and opportunity for prior public comment
+thereon were impracticable and contrary to the public interest, and good cause existed to make the AD effective immediately
+by individual letters issued on August 25, 1994, to all known U.S. owners and operators of Robinson Helicopter Company
+Model R22 series helicopters. These conditions still exist, and the AD is hereby published in the 
+
+Federal Register
+
+ as an amendment to section 39.13 of the Federal Aviation Regulations (14 CFR 39.13) to make it effective to all persons.
+
+
+
+Comments Invited 
+
+
+Although this action is in the form of a final rule that involves requirements affecting flight safety and, thus, was
+not preceded by notice and an opportunity for public comment, comments are invited on this rule. Interested persons
+are invited to comment on this rule by submitting such written data, views, or arguments as they may desire. Communications
+should identify the Rules Docket number and be submitted in triplicate to the address specified under the caption
+
+
+ADDRESSES
+
+. All communications received on or before the closing date for comments will be considered, and this rule may be amended
+in light of the comments received. Factual information that supports the commenter's ideas and suggestions is extremely
+helpful in evaluating the effectiveness of the AD action and determining whether additional rulemaking action would
+be needed. 
+Comments are specifically invited on the overall regulatory, economic, environmental, and energy aspects of the
+rule that might suggest a need to modify the rule. All comments submitted will be available, both before and after the
+closing date for comments, in the Rules Docket for examination by interested persons. A report that summarizes each
+FAA-public contact concerned with the substance of this AD will be filed in the Rules Docket. 
+Commenters wishing the FAA to acknowledge receipt of their comments submitted in response to this rule must submit
+a self-addressed, stamped postcard on which the following statement is made: ``Comments to Docket No. 94-SW-10-AD.''
+The postcard will be date stamped and returned to the commenter. 
+The regulations adopted herein will not have substantial direct effects on the States, on the relationship between
+the national government and the States, or on the distribution of power and responsibilities among the various levels
+of government. Therefore, in accordance with Executive Order 12612, it is determined that this final rule does not
+have sufficient federalism implications to warrant the preparation of a Federalism Assessment. 
+The FAA has determined that this regulation is an emergency regulation that must be issued immediately to correct
+an unsafe condition in aircraft, and that it is not a ``significant regulatory action'' under Executive Order 12866.
+It has been determined further that this action involves an emergency regulation under DOT Regulatory Policies and
+Procedures (44 FR 11034, February 26, 1979). If it is determined that this emergency regulation otherwise would be
+significant under DOT Regulatory Policies and Procedures, a final regulatory evaluation will be prepared and placed
+in the Rules Docket. A copy of it, if filed, may be obtained from the Rules Docket at the location provided under the caption
+
+
+ADDRESSES
+
+.
+
+
+List of Subjects in 14 CFR Part 39 
+
+
+Air transportation, Aircraft, Aviation safety, Incorporation by reference, Safety. 
+
+
+Adoption of the Amendment 
+
+
+Accordingly, pursuant to the authority delegated to me by the Administrator, the Federal Aviation Administration
+amends part 39 of the Federal Aviation Regulations (14 CFR part 39) as follows: 
+
+
+PART 39_AIRWORTHINESS DIRECTIVES 
+
+
+1. The authority citation for part 39 continues to read as follows:
+
+
+
+
+
+Authority:
+
+ 49 U.S.C. App. 1354(a), 1421 and 1423; 49 U.S.C. 106(g); and 14 CFR 11.89. 
+
+
+ 39.13
+
+[Amended] 
+
+
+2. Section 39.13 is amended by adding a new airworthiness directive to read as follows:
+
+
+
+
+
+AD 94-17-07 Robinson Helicopter Company:
+
+ Amendment 39-9059. Docket No. 94-SW-10-AD.
+
+
+
+
+
+Applicability:
+
+ Model R22 series helicopters, certificated in any category with tail rotor (T/R) gearboxes that were manufactured
+or overhauled by Robinson Helicopter Company prior to June 8, 1992. The following gearbox S/N's have been determined
+to have the T/R output key (key) installed and are therefore exempt from this AD: 0012, 0013, 0014, 0020, 0021, 0040,
+0054, 0062, 0091, 0095, 0098, 0108, 0121, 0134, 0137, 0153, 0169, 0179, 0185, 0191, 0201, 0205, 0227, 0228, 0235, 0248,
+0258, 0262, 0272, 0277, 0280, 0321, 0333, 0342, 0365, 0432, 0439, 0444, 0503, 0504, 0525, 0548, 0558, 0559, 0565, 0574,
+0576, 0592, 0594, 0597, 0603, 0604, 0605, 0615, 0632, 0641, 0644, 0650, 0656, 0662, 0663, 0674, 0686, 0689, 0696, 0697,
+0700, 0702, 0707, 0722, 0734, 0735, 0736, 0742, 0759, 0767, 0777, 0778, 0805, 0832, 0836, 0839, 0842, 0850, 0862, 0866,
+0868, 0887, 0892, 0937, 0939, 0983, 0986, 0996, 0998, 1018, 1021, 1029, 1030, 1035, 1072, 1081, 1087, 1104, 1116, 1121,
+1126, 1129, 1132, 1141, 1151, 1176, 1186, 1187, 1199, 1205, 1208, 1217, 1222, 1228, 1233, 1245, 1249, 1269, 1274, 1290,
+1293, 1299, 1301, 1307, 1311, 1323, 1330, 1333, 1339, 1341, 1350, 1361, 1379, 1385, 1388, 1392, 1404, 1412, 1428, 1438,
+1442, 1450, 1460, 1468, 1494, 1499, 1505, 1509, 1512, 1514, 1526, 1541, 1544, 1578, 1586, 1593, 1595, 1597, 1605, 1610,
+1627, 1628, 1636, 1643, 1647, 1648, 1652, 1654, 1686, 1687, 1698, 1701, 1702, 1706, 1710, 1724, 1731, 1732, 1738, 1741,
+1750, 1752, 1757, 1759, 1769, 1783, 1800, 1803, 1808, 1814, 1816, 1830, 1844, 1846, 1851, 1852, 1861, 1868, 1871, 1886,
+1889, 1901, 1911, 1912, 1927, 1928, 1948, 1959, 1961, 1963, 1965, 1992, 2025, 2034, 2037, 2051, 2071, 2100, 2101, 2103,
+2126, 2129, 2136, 2160, 2166, 2170, 2180, 2193, 2203, 2242, 2254, 2265, 2269, 2272, 2279, 2280, 2283, 2294, 2298, 2299,
+2304, 2314, 2357, 2377, 2380, 2381, 2395, 2406, 2420, 2421, 2422, 2423, 2425, 2431, 2435, 2436, 2459, 2479, 2492, 2498,
+2531, 2539, 2574, 2579, 2582, 2587, 2627, 2634, 2672, 2683, 2697, 2716, 2719, 2721, 2731, 2797, 2863, 2937, 2945. 
+
+
+Compliance:
+
+ Required as indicated, unless accomplished previously. 
+To prevent slippage of the T/R drive, loss of directional control, and subsequent loss of control of the helicopter,
+accomplish the following: 
+
+
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00010 </DOCNO>
+<PARENT> FR941104-0-00002 </PARENT>
+<TEXT>
+ 
+
+(a) Before further flight, install the alignment dots and perform an inspection in accordance with Part A of Robinson
+Helicopter Company R22 Service Bulletin (SB) 
+
+#
+
+74, dated July 18, 1994. Apply the 35-lb. weight very gently to avoid overstressing the T/R blade or T/R drive. Any slippage
+detected must be reported within 10 days after the inspection to the Manager, Los Angeles Manufacturing Inspection
+District Office, FAA, Northwest Mountain Region, 3229 E. Spring St., Long Beach, California 90806-2425, telephone
+(310) 988-5290, fax (310) 988-5293. Reporting requirements have been approved by the Office of Management
+and Budget and assigned OMB control number 2120-0056.
+(b) Before the first flight of each day, check for misalignment of the alignment dots installed on the tail cone skin
+and the drive shaft flange by rotating the T/R blade so that the alignment dot is visible in the inspection window and
+the tip of the T/R blade leading edge aligns with the dot on the tail cone skin. Next, ensure that the drive shaft flange
+dot is aligned with the dot on the centerline of the tail cone skin at the edge of the inspection window. If any misalignment
+is detected, before further flight, conduct the inspection required by paragraph (a) of this AD. The checks required
+by this AD may be performed by an owner/operator holding at least a private pilot certificate, and must be entered into
+the aircraft records showing compliance with this AD, in accordance with section 43.11 and 91.417(a)(2)(v) of the
+Federal Aviation Regulations.
+(c) Verification of the presence of the key through disassembly and reassembly of the T/R gearbox in accordance with
+FAA-approved procedures constitutes terminating action for the requirements of this AD.
+(d) An alternative method of compliance or adjustment of the compliance time that provides an acceptable level of
+safety may be used when approved by the Manager, Los Angeles Aircraft Certification Office, FAA. Operators shall
+submit their requests through an FAA Principal Maintenance Inspector, who may concur or comment and then send it to
+the Manager, Los Angeles Aircraft Certification Office.
+
+
+
+
+
+Note:
+
+ Information concerning the existence of approved alternative methods of compliance with this AD, if any, may be obtained
+from the Manager, Los Angeles Aircraft Certification Office.
+
+
+
+(e) Special flight permits may be issued in accordance with sections 21.197 and 21.199 of the Federal Aviation Regulations
+(14 CFR 21.197 and 21.199) to operate the helicopter to a location where the requirements of this AD can be accomplished.
+(f) The installation, inspection, and checks shall be done in accordance with Robinson Helicopter Company R22 Service
+Bulletin 
+
+#
+
+74, dated July 18, 1994. This incorporation by reference was approved by the Director of the Federal Register in accordance
+with 5 U.S.C. 552(a) and 1 CFR part 51. Copies may be obtained from Robinson Helicopter Company, 24747 Crenshaw Blvd.
+Torrance, CA 90505. Copies may be inspected at the FAA, Office of the Assistant Chief Counsel, 2601 Meacham Blvd.,
+Room 663, Fort Worth, Texas; or at the Office of the Federal Register, 800 North Capitol Street, NW., suite 700, Washington,
+DC.
+(g) This amendment becomes effective on November 21, 1994, to all persons except those persons to whom it was made immediately
+effective by Priority Letter AD 94-17-07, issued August 25, 1994, which contained the requirements of
+this amendment.
+
+
+
+Issued in Fort Worth, Texas, on October 24, 1994.
+
+
+<SIGNER>
+Eric Bries,
+
+</SIGNER>
+<SIGNJOB>
+Acting Manager, Rotorcraft Directorate, Aircraft Certification Service.
+
+</SIGNJOB>
+
+
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00011 </DOCNO>
+<PARENT> FR941104-0-00003 </PARENT>
+<TEXT>
+ 
+
+
+
+
+14 CFR Part 97
+
+
+
+
+27942; Amdt. No. 1630]
+
+
+
+
+Standard Instrument Approach Procedures; Miscellaneous Amendments 
+
+
+
+<AGENCY>
+AGENCY: 
+
+
+Federal Aviation Administration (FAA), DOT.
+
+
+
+</AGENCY>
+<ACTION>
+ACTION: 
+
+
+Final rule.
+
+
+
+
+
+
+</ACTION>
+<SUMMARY>
+SUMMARY: 
+
+
+This amendment establishes, amends, suspends, or revokes Standard Instrument Approach Procedures (SIAPs) for
+operations at certain airports. These regulatory actions are needed because of the adoption of new or revised criteria,
+or because of changes occurring in the National Airspace System, such as the commissioning of new navigational facilities,
+addition of new obstacles, or changes in air traffic requirements. These changes are designed to provide safe and
+efficient use of the navigable airspace and to promote safe flight operations under instrument flight rules at the
+affected airports.
+
+
+
+</SUMMARY>
+<SUPPLEM>
+SUPPLEMENTARY INFORMATION: 
+
+
+This amendment to part 97 of the Federal Aviation Regulations (14 CFR part 97) establishes, amends, suspends, or revokes
+Standard Instrument Approach Procedures (SIAPs). The complete regulatory description of each SIAP is contained
+in official FAA form documents which are incorporated by reference in this amendment under 5 U.S.C. 552(a) 1 CFR part
+51, and  97.20 of the Federal Aviation Regulations (FAR). The applicable FAA Forms are identified as FAA Forms
+8260-3, 8260-4, and 8260-5. Materials incorporated by reference are available for examination
+or purchase as stated above.
+
+
+
+
+The large number of SIAPs, their complex nature, and the need for a special format make their verbatim publication
+in the 
+
+Federal Register
+
+ expensive and impractical. Further, airmen do not use the regulatory text of the SIAPs, but refer to their graphic
+depiction on charts printed by publishers of aeronautical materials. Thus, the advantages of incorporation by reference
+are realized and publication of the complete description of each SIAP contained in FAA form documents is unnecessary.
+The provisions of this amendment state the affected CFR (and FAR) sections, with the types and effective dates of the
+SIAPs. This amendment also identifies the airport, its location, the procedure identification and the amendment
+number. 
+
+
+
+
+The Rule
+
+
+
+
+This amendment to part 97 is effective upon publication of each separate SIAP as contained in the transmittal. Some
+SIAP amendments may have been previously issued by the FAA in a National Flight Data Center (FDC) Notice to Airmen (NOTAM)
+as an emergency action of immediate flight safety relating directly to published aeronautical charts. The circumstances
+which created the need for some SIAP amendments may require making them effective in less than 30 days. For the remaining
+SIAPs, an effective date at least 30 days after publication is provided. 
+
+
+Further, the SIAPs contained in this amendment are based on the criteria contained in the U.S. Standard for Terminal
+Instrument Approach Procedures (TERPS). In developing these SIAPs, the TERPS criteria were applied to the conditions
+existing or anticipated at the affected airports. Because of the close and immediate relationship between these
+SIAPs and safety in air commerce, I find that notice and public procedure before adopting these SIAPs are unnecessary,
+impracticable, and contrary to the public interest and, where applicable, that good cause exists for making some
+SIAPs effective in less than 30 days. 
+
+
+The FAA has determined that this regulation only involves an established body of technical regulations for which
+frequent and routine amendments are necessary to keep them operationally current. It, therefore (1) is not a ``significant
+regulatory action'' under Executive Order 12866; (2) is not a ``significant rule'' under DOT Regulatory Policies
+and Procedures (44 FR 11034; February 26, 1979); and (3) does not warrant preparation of a regulatory evaluation as
+the anticipated impact is so minimal. For the same reason, the FAA certifies that this amendment will not have a significant
+economic impact on a substantial number of small entities under the criteria of the Regulatory Flexibility Act. 
+
+
+</SUPPLEM>
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00012 </DOCNO>
+<PARENT> FR941104-0-00003 </PARENT>
+<TEXT>
+ 
+
+List of Subjects in 14 CFR Part 97
+
+
+
+Air traffic control, Airports, Navigation (air).
+
+
+
+
+Issued in Washington, DC, on October 21, 1994.
+
+
+
+<SIGNER>
+Thomas C. Accardi,
+
+
+</SIGNER>
+<SIGNJOB>
+Director, Flight Standards Service.
+
+
+
+Adoption of the Amendment
+
+
+
+Accordingly, pursuant to the authority delegated to me, part 97 of the Federal Aviation Regulations (14 CFR part 97)
+is amended by establishing, amending, suspending, or revoking Standard Instrument Approach Procedures, effective
+at 0901 UTC on the dates specified, as follows:
+
+
+
+PART 97_STANDARD INSTRUMENT APPROACH PROCEDURES
+
+
+
+1. The authority citation for part 97 continues to read as follows:
+
+
+
+
+
+
+Authority: 
+
+49 U.S.C. app. 1348, 1354(a), 1421 and 1510; 49 U.S.C. 106(g); and 14 CFR 11.49(b)(2).
+
+
+
+
+2. Part 97 is amended to read as follows:
+
+
+
+  97.23, 97.25, 97.27, 97.29, 97.31, 97.33, 97.35
+
+
+
+[Amended]
+
+
+
+By amending:  97.23 VOR, VOR/DME, VOR or TACAN, and VOR/DME or TACAN;  97.25 LOC, LOC/DME, LDA, LDA/DME,
+SDF, SDF/DME;  97.27 NDB, NDB/DME;  97.29 ILS, ILS/DME, ISMLS, MLS, MLS/DME, MLS/RNAV;  97.31
+RADAR SIAPs;  97.33 RNAV SIAPs; and  97.35 COPTER SIAPs, identified as follows:
+
+
+
+***Effective February 2, 1995
+
+
+
+Little Rock, AR, North Little Rock Muni, VOR RWY 35, Amdt 4
+Bermuda Dunes, CA, Bermuda Dunes, VOR RWY 28, Orig CANCELLED
+Palm Springs, CA, Bermuda Dunes, VOR RWY 28, Orig
+Millville, NJ, Millville Muni, VOR/DME RNAV RWY 28, Amdt 1
+
+
+
+***Effective January 5, 1995
+
+
+
+Monterey, CA, Monterey Peninsula, NDB OR GPS RWY 10R, Amdt 12
+Kountze/Silsbee, TX, Hawthorne Field, NDB RWY 13, Amdt 2
+
+
+
+***Effective December 8, 1994
+
+
+
+Crescent City, CA, Jack McNamara Field, VOR RWY 11, Amdt 9
+Crescent City, CA, Jack McNamara Field, VOR/DME OR GPS RWY 11, Amdt 11
+Crescent City, CA, Jack McNamara Field, VOR/DME OR GPS RWY 35, Amdt 10
+Crescent City, CA, Jack McNamara Field, ILS/DME RWY 11, Amdt 5
+Santa Barbara, CA, Santa Barbara Muni, ILS RWY 7, Amdt 3
+Thomaston, GA, Thomaston-Upson County, LOC RWY 30, Orig
+Thomaston, GA, Thomaston-Upson County, NDB RWY 30, Orig
+Thomaston, GA, Reginald Grant Memorial, NDB RWY 3, Amdt 1, CANCELLED
+Washington, IA, Washington Muni, VOR/DME-A, Amdt 3A, CANCELLED
+Washington, IA, Washington Muni, VOR/DME RWY 36, Orig
+Washington, IA, Washington Muni, NDB RWY 31, Amdt 1
+Washington, IA, Washington Muni, VOR/DME RNAV RWY 31, Amdt 4
+Wichita, KS, Wichita Mid-Continent, VOR RWY 14, Amdt 1
+Wichita, KS, Wichita Mid-Continent, LOC BC RWY 19L, Amdt 15
+Wichita, KS, Wichita Mid-Continent, NDB RWY 1R, Amdt 15
+Wichita, KS, Wichita Mid-Continent, ILS RWY 1R, Amdt 16
+Wichita, KS, Wichita Mid-Continent, MLS RWY 19L, Amdt 1
+Wichita, KS, Wichita Mid-Continent, VOR/DME RNAV RWY 1L, Amdt 1
+Wichita, KS, Wichita Mid-Continent, VOR/DME RNAV RWY 19R, Amdt 1
+
+Old Town, ME, Dewitt Fld, Old Town Muni, VOR-A, Amdt 10, CANCELLED
+St Cloud, MN, St Cloud Muni, VOR RWY 31, Amdt 10
+St Cloud, MN, St Cloud Muni, VOR/DME RWY 13, Amdt 7
+St Cloud, NM, St Cloud Muni, NDB RWY 31, Amdt 1
+St Cloud, MN, St Cloud Muni, ILS RWY 31, Amdt 1
+Miller, SD, Miller Muni, NDB RWY 13, Amdt 2
+Carthage, TX, Panola County-Sharpe Field, NDB OR GPS RWY 35, Amdt 1
+
+Bluefield, WV, Mercer County, VOR RWY 23, Amdt 8
+Bluefield, WV, Mercer County, VOR/DME OR GPS RWY 23, Amdt 3
+
+
+
+***Effective November 10, 1994
+
+
+
+St Louis, MO, Spirit of St Louis, VOR RWY 8R, Amdt 7
+St Louis, MO, Spirit of St Louis, VOR RWY 26L, Amdt 5
+St Louis, MO, Spirit of St Louis, LOC RWY 26L, Amdt 4
+St Louis, MO, Spirit of St Louis, NDB RWY 8R, Amdt 11
+St Louis, MO, Spirit of St Louis, NDB RWY 26L, Amdt 1
+St Louis, MO, Spirit of St Louis, ILS RWY 8R, Amdt 13
+
+Johnstown, PA, Johnstown-Cambria County, ILS RWY 33, Amdt 3
+
+Chesapeake, VA, Chesapeake Muni, LOC RWY 5, Orig
+
+
+
+***Effective Upon Publication
+
+
+
+Concord, NC, Concord Regional, VOR/DME-A, Amdt 1
+
+
+
+</SIGNJOB>
+
+
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00013 </DOCNO>
+<PARENT> FR941104-0-00004 </PARENT>
+<TEXT>
+ 
+
+
+
+
+
+
+
+
+
+Standard Instrument Approach Procedures; Miscellaneous Amendments
+
+
+<AGENCY>
+AGENCY: 
+
+Federal Aviation Administration (FAA), DOT.
+
+
+</AGENCY>
+<ACTION>
+ACTION: 
+
+Final rule.
+
+
+
+
+</ACTION>
+<SUMMARY>
+SUMMARY: 
+
+This amendment establishes, amends, suspends, or revokes Standard Instrument Approach Procedures (SIAPs) for
+operations at certain airports. These regulatory actions are needed because of changes occurring in the National
+Airspace System, such as the commissioning of new navigational facilities, addition of new obstacles, or changes
+in air traffic requirements. These changes are designed to provide safe and efficient use of the navigable airspace
+and to promote safe flight operations under instrument flight rules at the affected airports.
+
+
+</SUMMARY>
+<SUPPLEM>
+SUPPLEMENTARY INFORMATION:
+
+ This amendment to part 97 of the Federal Aviation Regulations (14 CFR part 97) establishes, amends, suspends, or revokes
+Standard Instrument Approach Procedures (SIAPs). The complete regulatory description on each SIAP is contained
+in the appropriate FAA Form 8260 and the National Flight Data Center (FDC)/Permanent (P) Notices to Airmen (NOTAM)
+which are incorporated by reference in the amendment under 5 U.S.C. 552(a), 1 CFR part 51, and  97.20 of the Federal
+Aviations Regulations (FAR). Materials incorporated by reference are available for examination or purchase as
+stated above.
+
+
+The large number of SIAPs, their complex nature, and the need for a special format make their verbatim publication
+in the 
+
+Federal Register
+
+ expensive and impractical. Further, airmen do not use the regulatory text of the SIAPs, but refer to their graphic
+depiction of charts printed by publishers of aeronautical materials. Thus, the advantages of incorporation by reference
+are realized and publication of the complete description of each SIAP contained in FAA form documents is unnecessary.
+The provisions of this amendment state the affected CFR (and FAR) sections, with the types and effective dates of the
+SIAPs. This amendment also identifies the airport, its location, the procedure identification and the amendment
+number.
+
+
+The Rule
+
+
+This amendment to part 97 of the Federal Aviation Regulations (14 CFR part 97) establishes, amends, suspends, or revokes
+SIAPs. For safety and timeliness of change considerations, this amendment incorporates only specific changes contained
+in the content of the following FDC/P NOTAM for each SIAP. The SIAP information in some previously designated FDC/Temporary
+(FDC/T) NOTAMs is of such duration as to be permanent. With conversion to FDC/P NOTAMs, the respective FDC/T NOTAMs
+have been cancelled.
+
+</SUPPLEM>
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00014 </DOCNO>
+<PARENT> FR941104-0-00004 </PARENT>
+<TEXT>
+ 
+
+The FDC/P NOTAMs for the SIAPs contained in this amendment are based on the criteria contained in the U.S. Standard
+for Terminal Instrument Approach Procedures (TERPS). In developing these chart changes to SIAPs by FDC/P NOTAMs,
+the TERPS criteria were applied to only these specific conditions existing at the affected airports. All SIAP amendments
+in this rule have been previously issued by the FAA in a National Flight Data Center (FDC) Notice to Airmen (NOTAM) as
+an emergency action of immediate flight safety relating directly to published aeronautical charts. The circumstances
+which created the need for all these SIAP amendments requires making them effective in less than 30 days.
+Further, the SIAPs contained in this amendment are based on the criteria contained in the TERPS. Because of the close
+and immediate relationship between these SIAPs and safety in air commerce, I find that notice and public procedure
+before adopting these SIAPs are unnecessary, impracticable, and contrary to the public interest and, where applicable,
+that good cause exists for making these SIAPs effective in less than 30 days.
+
+
+
+Conclusion
+
+
+
+The FAA has determined that this regulation only involves an established body of technical regulations for which
+frequent and routine amendments are necessary to keep them operationally current. It, therefore, 1. is not a ``significant
+regulatory action'' under Executive Order 12866; 2. is not a ``significant rule'' under DOT Regulatory Policies
+and Procedures (44 FR 11034; February 26, 1979); and 3. does not warrant preparation of a regulatory evaluation as
+the anticipated impact is so minimal. For the same reason, the FAA certifies that this amendment will not have a significant
+economic impact on a substantial number of small entities under the criteria of the Regulatory Flexibility Act.
+
+
+
+List of Subjects in 14 CFR Part 97
+
+
+Air traffic control, Airports, Navigation (air).
+
+
+
+
+Issued in Washington, DC, on October 21, 1994.
+
+
+
+<SIGNER>
+Thomas C. Accardi,
+
+</SIGNER>
+<SIGNJOB>
+Director, Flight Standards Service.
+
+
+
+Adoption of the Amendment
+
+
+
+Accordingly, pursuant to the authority delegated to me, part 97 of the Federal Aviation Regulations (14 CFR part 97)
+is amended by establishing, amending, suspending, or revoking Standard Instrument Approach Procedures, effective
+at 0901 UTC on the dates specified, as follows:
+
+
+
+PART 97_STANDARD INSTRUMENT APPROACH PROCEDURES
+
+
+1. The authority citation for part 97 continues to read as follows:
+
+
+
+
+
+
+Authority:
+
+ 49 U.S.C. app. 1348, 1354(a), 1421 and 1510; 49 U.S.C. 106(g); and 14 CFR 11.49(b)(2).
+
+
+
+2. Part 97 is amended to read as follows:
+</SIGNJOB>
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00015 </DOCNO>
+<PARENT> FR941104-0-00004 </PARENT>
+<TEXT>
+ 
+
+  97.23, 97.25, 97.27, 97.29, 97.31, 97.33, 97.35 
+
+[Amended]
+
+ 
+
+By amending:  97.23 VOR, VOR/DME, VOR or TACAN, and VOR/DME or TACAN;  97.25 LOC, LOC/DME, LDA, LDA/DME,
+SDF, SDF/DME;  97.27 NDB, NDB/DME;  97.29 ILS, ILS/DME, ISMLS, MLS, MLS/DME, MLS/RNAV;  97.31
+RADAR SIAPs;  97.33 RNAV SIAPs; and  97.35 COPTER SIAPs, identified as follows: Effective upon publication.
+
+
+
+
+
+
+
+
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00016 </DOCNO>
+<PARENT> FR941104-0-00005 </PARENT>
+<TEXT>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Protective Glove Requirement 
+
+
+
+<AGENCY>
+AGENCY: 
+
+Federal Aviation Administration, DOT.
+
+
+
+</AGENCY>
+<ACTION>
+ACTION: 
+
+Final rule; correction.
+
+
+
+
+
+
+</ACTION>
+<SUMMARY>
+SUMMARY: 
+
+This document contains corrections to the final rule [FR Doc. 94-24498] published on October 18, 1994 (59 FR
+52640). The published list of items to be included in the kit inadvertently listed an item that previously had been
+deleted. This document corrects that error and one editorial omission.
+
+
+
+</SUMMARY>
+<SUPPLEM>
+SUPPLEMENTARY INFORMATION: 
+
+On October 18, 1994, the FAA published a final rule amending the regulations that list the items required in the first
+aid kits carried on board aircraft operated in air carrier, air taxi, and commercial operations (59 FR 52640). In the
+list published in the final rule, the item ``Burn compound, 1/8 oz or an equivalent of other burn remedy'' appeared
+in the listing under   125.207 and 135.177. The inclusion of burn compound was in error. Burn compound
+was removed by an earlier amendment (59 FR 1780, January 12, 1994).
+
+
+
+Further, in the amendment to  121.309, a period was omitted at the end of paragraph (d)(1). 
+
+
+
+Correction of Publication 
+
+
+
+Accordingly, the publication on October 18, 1994 of the final rule that was the subject of FR Doc. 94-24498 is
+corrected as follows: 
+
+
+
+ 121.309 
+
+[Corrected]
+
+
+
+1. On page 52642, in the third column, in  121.309, in paragraph (d)(1), in the last line, add a period after the
+words ``of this part''. 
+
+
+
+ 125.207 
+
+[Corrected]
+
+
+
+2. On page 52643, in the first column, in  125.207, in the table in paragraph (a)(1)(iii), in the column titled
+``Contents'' remove the entry that reads ``Burn compound, 1/8 oz or an equivalent of other burn remedy''; in the column
+titled ``Quantity'' remove the entry ``6'' that corresponds to the burn compound entry. 
+
+
+
+ 135.177 
+
+[Corrected]
+
+
+
+3. On page 52643, in the third column, in  135.177, in the table in paragraph (a)(1)(iii), in the column titled
+``Contents'' remove the entry that reads ``Burn compound, 1/8 oz or an equivalent of other burn remedy''; in the column
+titled ``Quantity'' remove the entry ``6'' that corresponds to the burn compound entry. 
+
+
+
+
+Issued in Washington, DC on October 31, 1994. 
+
+
+</SUPPLEM>
+<SIGNER>
+Donald P. Byrne, 
+
+
+</SIGNER>
+<SIGNJOB>
+Assistant Chief Counsel for Regulations. 
+
+
+</SIGNJOB>
+
+
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00017 </DOCNO>
+<PARENT> FR941104-0-00006 </PARENT>
+<TEXT>
+ 
+
+
+
+
+
+
+
+<USDEPT>DEPARTMENT OF LABOR</USDEPT>
+
+
+
+<USBUREAU>Occupational Safety and Health Administration</USBUREAU>
+
+
+
+
+
+
+
+
+
+
+Permit-Required Confined Spaces
+
+
+
+<AGENCY>
+AGENCY:
+
+ Occupational Safety and Health Administration (OSHA), U.S. Department of Labor.
+
+
+
+</AGENCY>
+<ACTION>
+ACTION:
+
+ Final rule: technical amendment to preamble.
+
+
+
+
+</ACTION>
+<SUMMARY>
+SUMMARY:
+
+ On January 14, 1993 at 58 FR 4462, the Occupational Safety and Health Administration (OSHA) published a final rule
+on Permit-Required Confined Spaces, 29 CFR 1910.146 in the 
+
+Federal Register
+
+. On June 29, 1993 at 58 FR 34844, OSHA published a corrections document for that final rule which contained corrections
+to the regulatory text and to several appendices of the final rule. Another document was published on May 19, 1994 at
+59 FR 26114 which added a metric equivalent in paragraph (k)(3)(ii) and further revised the ``Atmospheric monitoring''
+section of Appendix E, ``Sewer System Entry'', of the final rule. This document revises one paragraph of the preamble
+discussion of the definition of confined space in the January 14, 1993 document.
+
+
+
+</SUMMARY>
+<SUPPLEM>
+SUPPLEMENTARY INFORMATION:
+
+ OSHA published its final rule on Permit-Required Confined Spaces (PRCS), 29 CFR 1910.146, on January 14, 1993 at 58
+FR 4462. Corrections to the regulatory text and to several appendices were published on June 29, 1993 at 58 FR 34844.
+A technical amendment was published on May 19, 1994 at 59 FR 26114.
+
+
+
+Amendment to Preamble of 29 CFR 1910.146
+
+
+
+In the Permit-Required Confined Spaces standard, on pages 4477 and 4478 of the January 14, 1993 
+
+Federal Register
+
+ document preamble, OSHA made the following statement:
+
+
+
+
+As indicated in the preamble to the proposal [54 FR 24089], OSHA notes that doorways and other portals through which
+a person can walk are not to be considered limited means for entry or exit.
+
+
+
+
+This sentence was intended to limit the application of the definition of confined spaces to those areas where an employee
+would be forced to enter or exit in a posture that might slow self-rescue, or make rescue more difficult. These spaces
+warrant additional consideration as to whether they pose a hazard to entrants and would, therefore, be regulated
+as permit-required confined spaces (permit spaces). For example, even if the door or portal of a space is of sufficient
+size, obstructions could make entry into or exit from the space difficult. The Agency intended that spaces which otherwise
+meet the definition of confined spaces, and which have obstructed entry or exits even though the portal is a standard
+size doorway, be classified as confined spaces. OSHA acknowledges that the preamble to the final rule did not clearly
+express that intent.
+
+Accordingly, OSHA is adding preamble language to follow the above-mentioned statement. This text will make OSHA's
+original intent clear, without changing the PRCS standard.
+
+
+
+Exemption From Notice and Comment Procedures
+
+
+
+With regard to this action, OSHA has determined that it is not required to follow procedures for public notice and comment
+rulemaking under either section 4 of the Administrative Procedure Act (5 U.S.C. 553) or under section 6(b) of the Occupational
+Safety and Health Act (29 U.S.C. 655(b)). This action does not affect the substantive requirements or coverage of
+the standards themselves. This technical amendment does not modify or revoke existing rights or obligations, nor
+does it establish new ones. This action simply provides additional information on the existing regulatory burden.
+OSHA, therefore, finds that notice and public procedure are impracticable and unnecessary within the meaning of
+5 U.S.C. 553(b)(3)(B). For the same reasons, OSHA also finds that, in accordance with 29 CFR 1911.5, good cause exists
+for dispensing with the public notice and comment procedures prescribed in section 6(b) of the Occupational Safety
+and Health Act.
+
+
+
+Exemption From Delayed Effective Date Requirement
+
+
+
+Under 5 U.S.C. 553, OSHA finds that is good cause for making this technical amendment effective upon publication in
+the 
+
+Federal Register
+
+. This technical amendment simply provides additional information on the existing regulatory burden without increasing
+that burden.
+
+
+
+
+
+
+Authority:
+
+ This document was prepared under the direction of Joseph A. Dear, Assistant Secretary of Labor for Occupational Safety
+and Health, U.S. Department of Labor, 200 Constitution Avenue NW., Washington, DC 20210.
+
+
+
+
+Signed at Washington, DC, this 1st day of November 1994.
+
+
+</SUPPLEM>
+<SIGNER>
+Joseph A. Dear,
+
+</SIGNER>
+<SIGNJOB>
+Assistant Secretary of Labor.
+
+
+
+
+Accordingly, in the January 14, 1993, Final Rule for Permit-Required Confined Spaces for General Industry (58 FR
+4462), the preamble section on page 4477, column 3 and page 4478, column 1, is revised to read as follows:
+
+As indicated in the preamble to the proposal [54 FR 24089], OSHA notes that doorways and other portals through which
+a person can walk are not to be considered limited means for entry or exit. However, a space containing such a door or
+portal may still be deemed a confined space if an entrant's ability to escape in an emergency would be hindered.
+
+
+
+</SIGNJOB>
+
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00018 </DOCNO>
+<PARENT> FR941104-0-00007 </PARENT>
+<TEXT>
+ 
+
+
+
+
+
+
+
+<USDEPT>DEPARTMENT OF THE TREASURY</USDEPT>
+
+
+
+<USBUREAU>Office of Foreign Assets Control</USBUREAU>
+
+
+
+Panamanian Transactions Regulations; Termination of Residual Blocking of Government of Panama Assets
+
+
+<AGENCY>
+AGENCY:
+
+ Office of Foreign Assets Control, Treasury.
+
+
+
+</AGENCY>
+<ACTION>
+ACTION:
+
+ Final rule; amendment.
+
+
+
+
+</ACTION>
+<SUMMARY>
+SUMMARY:
+
+ The Office of Foreign Assets Control is amending the Panamanian Transactions Regulations to terminate the residual
+blocking of Government of Panama assets, effective November 4, 1994. This action terminates the Panamanian program
+of the Office of Foreign Assets Control. Authority to take enforcement action for sanctions violations is not affected
+by this action.
+
+
+
+</SUMMARY>
+<SUPPLEM>
+SUPPLEMENTARY INFORMATION:
+
+Electronic Availability
+
+
+This document is available as an electronic file on 
+
+The Federal Bulletin Board
+
+ the day of publication in the 
+
+Federal Register
+
+. By modem dial 202/512-1387 or call 202/512-1530 for disks or paper copies. This file is available in Postscript,
+WordPerfect 5.1 and ASCII.
+
+
+Background
+
+
+Executive Order 12710 of April 5, 1990, 3 CFR, 1990 Comp., p. 282, terminated the national emergency declared on April
+8, 1988, with respect to Panama, and lifted sanctions imposed against the Noriega regime. Pursuant to section 207(a)(2)
+of the International Emergency Economic Powers Act, 50 U.S.C. 1706(a)(2), however, the order continued the blocking
+of certain Government of Panama assets in the United States, with the understanding of the Government of Panama, to
+facilitate resolution of claims of U.S. persons. Because all such claims known to the Office of Foreign Assets Control
+(``FAC'') and arising prior to the lifting of sanctions have either been settled or provided for by the Government
+of Panama, including its agencies, instrumentalities, and controlled entities such as Air Panama, the residual
+blocking has fulfilled its purpose. Therefore, FAC is revising  565.510 of the Panamanian Transactions Regulations,
+31 CFR part 565 (the ``Regulations''), to authorize, November 4, 1994, all transactions otherwise prohibited by
+the Regulations with respect to property and property interests in which the Government of Panama has an interest.
+
+Because the Regulations involve a foreign affairs function, Executive Order 12866 and the provisions of the Administrative
+Procedure Act, 5 U.S.C. 553, requiring notice of proposed rulemaking, opportunity for public participation, and
+delay in effective date, are inapplicable. Because no notice of proposed rulemaking is required for this rule, the
+Regulatory Flexibility Act, 5 U.S.C. 601-612, does not apply.
+
+
+List of Subjects in 31 CFR Part 565
+
+
+Blocking of assets, Foreign claims, Panama, Penalties, Reporting and recordkeeping requirements, Transfer of
+assets.
+
+
+
+
+For the reasons set forth in the preamble, 31 CFR part 565 is amended as follows:
+
+
+PART 565_PANAMANIAN TRANSACTIONS REGULATIONS
+
+
+1. The authority citation for part 565 continues to read as follows: 
+
+
+
+
+
+
+Authority:
+
+ 50 U.S.C. 1701-1706, E.O. 12635, 53 FR 12134 (April 12, 1988), 3 CFR, 1988 Comp., p. 563; E.O. 12710, 55 FR 13099
+(April 6, 1990), 3 CFR, 1990 Comp., p. 282.
+
+
+Subpart E_Licenses, Authorizations, and Statements of Licensing Policy
+
+
+2. The heading and text of  565.510 are revised to read as follows:
+
+
+ 565.510 Government of Panama assets unblocked.
+
+
+(a) Effective November 4, 1994, all transactions involving property in which the Government of Panama has an interest
+that would otherwise be prohibited by this part are authorized. 
+(b) Nothing in this section shall authorize transactions prior to November 4, 1994, that were prohibited by this part
+when transacted. Enforcement actions with respect to violations of this part are not affected by this section.
+
+
+
+
+
+
+Dated: October 11, 1994.
+
+</SUPPLEM>
+<SIGNER>
+Steven I. Pinter,
+
+</SIGNER>
+<SIGNJOB>
+Acting Director, Office of Foreign Assets Control.
+
+
+
+
+Approved: October 11, 1994.
+
+</SIGNJOB>
+<SIGNER>
+R. Richard Newcomb,
+
+</SIGNER>
+<SIGNJOB>
+Acting Deputy Assistant Secretary (Law Enforcement).
+
+
+
+</SIGNJOB>
+
+
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00019 </DOCNO>
+<PARENT> FR941104-0-00008 </PARENT>
+<TEXT>
+ 
+
+
+
+
+
+
+
+<USDEPT>FEDERAL COMMUNICATIONS COMMISSION</USDEPT>
+
+
+
+
+
+
+
+
+
+
+Narrowband Personal Communications Services
+
+
+
+<AGENCY>
+AGENCY: 
+
+Federal Communications Commission.
+
+
+
+</AGENCY>
+<ACTION>
+ACTION: 
+
+Final rule; correction.
+
+
+
+
+
+
+</ACTION>
+<SUMMARY>
+SUMMARY: 
+
+This document contains a correction to the final regulations, which were published on August 11, 1993 (58 FR 42681).
+The regulations related to the frequency allocation and service rules for Narrowband Personal Communications Services.
+
+
+
+</SUMMARY>
+<SUPPLEM>
+SUPPLEMENTARY INFORMATION:
+
+
+
+
+Need for Correction
+
+
+
+As published, the final regulation contains an error that needs to be corrected to ensure that the Commission's decision
+is properly implemented.
+
+
+
+Correction of Publication
+
+
+
+Accordingly, the publication on August 11, 1993 of the final regulations, is corrected as follows:
+
+
+
+ 99.411 
+
+[Corrected]
+
+
+
+On page 42688, in column 1, paragraph (d) is corrected to read as follows:
+
+(d) A minimum spectrum analyzer resolution bandwidth of 300 Hz shall be used when showing compliance with paragraphs
+(a)(1) (i) and (ii) and (a)(2) (i) and (ii).
+
+This rule was subsequently renumbered as  24.411.
+
+
+
+List of Subjects in 47 CFR Part 24
+
+
+
+Communications equipment.
+
+
+
+
+Federal Communications Commission.
+
+
+</SUPPLEM>
+<SIGNER>
+William F. Caton,
+
+</SIGNER>
+<SIGNJOB>
+Acting Secretary.
+
+
+</SIGNJOB>
+
+
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00020 </DOCNO>
+<PARENT> FR941104-0-00009 </PARENT>
+<TEXT>
+ 
+
+
+Friday
+
+
+November 4, 1994
+
+
+
+
+
+Part IV
+
+
+Environmental Protection Agency
+
+
+
+
+
+40 CFR Part 271
+Washington: Final Authorization of State Hazardous Waste 
+Management Program Revisions; Final Rule
+
+
+
+
+
+
+
+
+
+Federal Register
+
+  Vol. 59, No. 213  Friday, November 4, 
+1994  Rules and Regulations 
+
+
+
+
+<USDEPT>ENVIRONMENTAL PROTECTION AGENCY </USDEPT>
+
+
+
+<USDEPT>40 CFR Part 271 </USDEPT>
+
+
+
+
+
+
+
+
+Washington: Final Authorization of State Hazardous Waste Management Program Revisions 
+
+
+
+<AGENCY>
+AGENCY:
+
+ Environmental Protection Agency. 
+
+
+
+</AGENCY>
+<ACTION>
+ACTION:
+
+ Immediate final rule. 
+
+
+
+
+</ACTION>
+<SUMMARY>
+SUMMARY:
+
+ The State of Washington has applied for final authorization of revisions to its hazardous waste program under the
+Resource Conservation and Recovery Act (RCRA). The Environmental Protection Agency (EPA) has reviewed the State
+of Washington's application and has reached a decision that the State of Washington's hazardous waste program revision
+satisfies all of the requirements necessary to qualify for final authorization. Thus, EPA is granting final authorization
+to the State of Washington to operate its expanded program, subject to the authority retained by EPA in accordance
+with the Hazardous and Solid Waste Amendments of 1984.
+
+ 
+</SUMMARY>
+<SUPPLEM>
+SUPPLEMENTARY INFORMATION:
+A. Background 
+
+
+States with final authorization under section 3006(b) of the Resource Conservation and Recovery Act, as amended
+(``RCRA''), 42 U.S.C. 6929(b), have a continuing obligation to maintain a hazardous waste program that is equivalent
+to, consistent with, and no less stringent than the Federal hazardous waste program. In addition, as an interim measure,
+the Hazardous and Solid Waste Amendments of 1984 to RCRA (Public Law 98-616, November 8, 1984, hereinafter ``HSWA'')
+allows States to revise their programs to become substantially equivalent instead of equivalent to RCRA requirements
+promulgated under HSWA authority. States exercising the latter option receive ``interim authorization'' for the
+HSWA requirements under section 3006(g) of RCRA, 42 U.S.C. 6926(g), and later apply for final authorization for the
+HSWA requirements. 
+Revisions to State hazardous waste programs are necessary when Federal or State statutory or regulatory authority
+is modified or when certain other changes occur. Most commonly, State program revisions are necessitated by changes
+to EPA's regulations in 40 CFR parts 124, 260-266, 268 and 270. 
+
+
+B. State of Washington 
+
+
+The State of Washington initially received final authorization on January 31, 1986. The State of Washington received
+authorization for revisions to its program on November 23, 1987 (52 FR 35556, 9/22/87) and on October 16, 1990 (55 FR
+33695, 8/17/90). On January 12, 1994, the State of Washington submitted a program revision application for additional
+program approvals. On March 30, 1994, EPA published a proposal to approve the State of Washington's application for
+program revision in accordance with 40 CFR 271.21(b)(4). 
+EPA has reviewed the State of Washington's application, and has made a final decision that Washington's hazardous
+waste program revision satisfies all of the requirements necessary to qualify for final authorization. Consequently,
+EPA is granting final authorization for the additional program modifications to Washington's hazardous waste program.
+Attachments 1, 2, 5, 6, 8-17 and Appendices 1-4 of the State's application are provided for information
+only. 
+
+
+</SUPPLEM>
+
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00021 </DOCNO>
+<PARENT> FR941104-0-00009 </PARENT>
+<TEXT>
+ 
+
+C. Washington's Corrective Action Program 
+
+
+The State of Washington's authorized RCRA program is set forth in Chapter 173-303 of the Washington Administrative
+Code (WAC), entitled ``Dangerous Waste Regulations''. The Dangerous Waste Regulations include both authorized
+and non-authorized requirements. Washington has amended the Dangerous Waste Regulations to include corrective
+action requirements; however, Washington may also rely on its existing state ``superfund-like'' cleanup authority,
+Model Toxics Control Act (MTCA), and its implementing regulations in Chapter 173-340 entitled ``Model Toxics
+Control Act Cleanup Regulation'', to implement corrective action requirements and to compel corrective actions.
+
+The statutory authority for the Dangerous Waste Regulations is found in the Revised Code of Washington (RCW), Chapters
+70.105 and 70.105D. RCW 70.105D.030(1)(d) is the statutory provision which allows the State of Washington Department
+of Ecology (Ecology) to carry out all state programs authorized under the federal RCRA statute. RCW 70.105.130 designates
+Ecology as the agency tasked with implementing the authorized RCRA program and provides Ecology with the authority
+to establish a permit system for owners or operators of facilities which treat, store, or dispose of dangerous waste.
+RCW 70.105.020 authorizes Ecology to revise and modify the Dangerous Waste Regulations. Statutory authority for
+MTCA is also found in RCW Chapter 70.105D. RCW 70.105D.030(2) authorizes Ecology to adopt rules to set cleanup standards
+for remedial actions taken under MTCA authority. RCW 70.105D.050(1) explicitly grants Ecology the authority to
+issue orders under MTCA to direct potentially liable parties to conduct remedial action. 
+Washington may compel corrective action by issuing orders pursuant to MTCA to owners and operators of facilities
+seeking or required to have a permit to manage dangerous waste. Such orders are referred to as ``state corrective action
+orders''. State corrective action orders will be somewhat hybrid, presenting RCRA corrective action requirements
+in the context of a state ``superfund-like'' cleanup. EPA emphasizes that corrective action requirements are not
+being deferred to a state superfund-like authority; rather, the state authority will be used to compel RCRA corrective
+action requirements. In order to fulfill the RCRA Section 3004 (u) and(v) requirement that all RCRA permits must include
+corrective action permit conditions, state corrective action orders will be incorporated into RCRA permits issued
+pursuant to the authorized State program permitting regulations. 
+Washington's corrective action program would allow corrective action to be specified through the terms of a State-issued
+order which is incorporated by reference into operating or post-closure permits issued to facilities. The State
+could: 1) issue the order in advance of the permit; 2) modify the permit to incorporate the order; or 3) simultaneously
+issue the order and the permit with the order incorporated into the permit. Under the Washington program, a State order
+would be considered to be part of the authorized RCRA program only when the order is incorporated into an existing RCRA
+permit, or when the order is issued simultaneously with and incorporated by reference into a new RCRA permit. 
+
+
+D. Comparison of Washington's Corrective Action Program to the Federal Program 
+
+
+Ordinarily, States await promulgation of Federal regulations prior to submitting their applications. However,
+there is no impediment under the RCRA statutory provisions which would bar a State from seeking authorization of a
+program in advance of Federally promulgated regulations provided the State bases its program on existing Federal
+statutory language. An existing Federal counterpart is the critical nexus in the authorization program. 
+Washington's corrective action program goes slightly beyond the EPA-promulgated regulations (see 40 CFR 264.100
+and 264.101) which implement the statutory provisions of sections 3004(u) and (v) of RCRA, 42 U.S.C. 6924(u) and (v),
+in which facilities seeking a permit are required to undertake corrective action for all releases of hazardous waste
+or constituents from any solid waste management unit (SWMU) and to undertake such corrective actions beyond the property
+boundary where necessary. Washington's program will instead utilize its existing Superfund-like cleanup order
+authority (the Model Toxics Control Act) through the State's authorized RCRA program by linking the cleanup order
+authority with the State's authorized RCRA program permitting requirements to fulfill the mandates of sections
+3004(u) and (v) of RCRA, 42 U.S.C. 6924(u) and (v). 
+The statutory language of Section 3004(u) of RCRA applies to corrective action at solid waste management units. Although
+no statutory or regulatory definition of ``solid waste management unit'' has been promulgated, EPA's proposed Subpart
+S corrective action rule, published in the 
+
+Federal Register
+
+ on July 27, 1990 (55 FR 30798), contains EPA's most current interpretation of key terms in section 3004(u) of RCRA.
+This is and will be the controlling interpretation against which Washington's regulatory definition of solid waste
+management unit shall be measured until EPA codifies a statutory or regulatory definition. 
+The statutory language of section 3004(u) of RCRA also applies to ``facilities seeking a permit.'' Such facilities
+include those hazardous waste management facilities which are required to obtain permits to operate and to those
+subject to post-closure permits. EPA has interpreted this language to mean that corrective action must be specified
+in operating or post-closure permits issued to such facilities. 
+
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00022 </DOCNO>
+<PARENT> FR941104-0-00009 </PARENT>
+<TEXT>
+ 
+
+State corrective action orders will be issued to facilities subject to the Washington State Dangerous Waste Regulations,
+codified in the Washington Administrative Code (WAC) in Chapter 173-303, but these orders will rely in part on the
+State of Washington's Model Toxics Control Act (MTCA) statutory and regulatory provisions and will require current
+owners and operators of SWMUs to conduct corrective action at those units in accordance with the Dangerous Waste Regulations.
+
+EPA is not delegating RCRA section 3008(h) authority [42 U.S.C. 6928(h)] as part of this authorization. No Federal
+enforcement authorities are delegated when EPA authorizes state programs under section 3006 of RCRA. 
+Any orders issued to a facility under MTCA will not be considered to be part of the EPA-authorized corrective action
+program unless and until they are incorporated into a RCRA permit. Terms of the orders which go beyond the scope of the
+authorized Dangerous Waste regulations will be considered broader in scope, and thus not Federally enforceable.
+Federal enforceability does not affect the ability of the State to impose requirements pursuant to their legitimate
+State statutory authorities or to enforce those requirements in lawfully-issued orders or permits. 
+Some portions of Washington's revised program are broader in scope than the Federal program, and thus are not Federally
+enforceable. Due to Washington's statutory mandate to address all releases of hazardous substances, Washington
+has developed corrective action requirements which are, in part, broader in scope than the Federal corrective action
+requirements in RCRA Section 3004(u), in that dangerous waste management facilities in Washington will be required
+to conduct corrective action as necessary to protect human health and the environment for all releases of dangerous
+waste and dangerous constituents at or from the facility, regardless of the source of the release. 
+Some portions of Washington's revised program are more stringent than the Federal program. The requirement to implement
+corrective action for releases which have migrated beyond the facility boundary is more stringent than the Federal
+requirement, in that it is not limited by the ``best efforts'' language in the Federal requirement. 
+To clarify, Washington will be authorized for the following provisions as part of this authorization (see State Authorization
+Checklists 17L, 38, 44A, 44B, 121): 
+
+
+
+
+
+
+In order to approve the State of Washington to use orders issued under MTCA to compel RCRA corrective action, it was
+necessary to identify the essential elements of a RCRA corrective action program and to determine that the State had
+the necessary authorities to meet these substantive RCRA requirements. The following table identifies those substantive
+RCRA corrective action requirements and demonstrates that the corresponding State authorities exist which allow
+the State to meet these requirements. Whereas certain of the state authorities listed are already authorized or are
+being authorized in today's action, this table only serves to demonstrate that orders issued under MTCA can compel
+corrective action which would meet all substantive RCRA corrective action requirements and is provided here for
+information only. As stated above, orders issued by the state are not part of the RCRA authorized program until such
+order is incorporated into a RCRA permit. 
+
+
+
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00023 </DOCNO>
+<PARENT> FR941104-0-00009 </PARENT>
+<TEXT>
+ 
+
+
+
+
+
+E. Indian Lands 
+
+
+Washington is not seeking authorization to operate on Indian lands. 
+
+
+F. Public Hearing and Comments 
+
+
+Although EPA received three requests for a public hearing, EPA did not find that the bases for the requests warranted
+a public hearing, since the issues raised were outside the scope of this authorization action. 
+EPA received a number of comments during the public comment period. A detailed Response to Comments has been prepared
+and is available upon request. The following is a summary of the comments received and EPA's responses to those comments.
+
+
+
+
+
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00024 </DOCNO>
+<PARENT> FR941104-0-00009 </PARENT>
+<TEXT>
+ 
+
+One commenter was concerned about the interaction between regulation of radioactive materials under the Atomic
+Energy Act (AEA) and of hazardous wastes under RCRA, specifically that EPA's authorization of the State of Washington
+for RCRA corrective action under the State's Hazardous Waste Management Act (HWMA) would allow the Washington Department
+of Ecology to ``preempt'' the State Department of Health's regulatory authority (delegated by the Nuclear Regulatory
+Commission) over the operation of their facility. The commenter was also concerned about certain conflicting state
+regulatory and statutory provisions regarding the regulatory authority of the Department of Health. 
+
+In response, the State of Washington has not asked that the statutory provision cited by the commenter [RCW 70.105.240(2)]
+be authorized as part of the federally authorized RCRA program. As such, RCW 70.105.240(2) will not be part of the federally-authorized
+state RCRA corrective action program which will operate in lieu of the federal RCRA corrective action program. This
+will remain a ``state-only'' provision and EPA will not enforce it. 
+
+The State of Washington is today being authorized to implement its corrective action program in lieu of the federal
+RCRA corrective action program. The RCRA corrective action program seeks to address releases of hazardous waste
+and constituents from solid waste management units at a facility. ``Regulated units'' are units such as landfills,
+waste piles, surface impoundments, and land treatment units used to treat, store, or dispose of RCRA-regulated hazardous
+wastes and are subject to full regulation under subtitle C of RCRA. 
+
+See 
+
+40 CFR 264.90. ``Solid waste management units,'' or ``SWMUs,'' are any discernable units at which ``solid wastes''
+may have been placed at any time. 
+
+See 
+
+55 FR 30798, 30874, July 27, 1990 (proposed RCRA Subpart S Rule). If EPA determines that the presence of solid or hazardous
+waste at either a regulated unit or a solid waste management unit has led to a release or a threatened release of a hazardous
+waste or constituent from such units, EPA can require the owner or operator of a unit to address such releases by taking
+necessary ``corrective action'' at the unit. 
+
+EPA's ability to require corrective action at such units does 
+
+not 
+
+mean that SWMUs are ``regulated'' under the RCRA ``base program'' and therefore subjected to RCRA permitting requirements.
+The RCRA ``base program'' consists, in part, of those provisions of RCRA that govern the generation, transport, treatment,
+storage and disposal of hazardous wastes. The RCRA ``base program'' is considered to be those provisions of the RCRA
+program before the passage of the Hazardous and Solid Waste Amendments (``HSWA'') of 1984 to RCRA. HSWA introduced
+the corrective action requirements into the RCRA statute. In contrast and in general, only ``regulated units'' and
+generator accumulation areas are subject to the operational requirements of the RCRA ``base program.'' These operational
+requirements are separate and apart from any corrective action requirements that might be imposed by the State of
+Washington under the authorized state corrective action program. 
+
+Therefore, the commenter's concern that EPA's authorization of the State of Washington for RCRA 
+
+corrective action 
+
+will allow the Department of Ecology to ``preempt'' the Department of Health's regulatory authority over the 
+
+operation
+
+ of the commenter's facility is unfounded. If the State of Washington wanted to regulate the daily operations of the
+facility's radioactive waste management activities under RCRA, it would have to do so under the state's dangerous
+waste ``base'' RCRA program. 
+
+One commenter stated that ``Given that EPA has stated that it will interpret Washington's regulatory definition
+of SWMU against its discussion in the proposed corrective action rule, [the commenter] requests that the State of
+Washington through its authorized program will not be allowed to assert jurisdiction over mixed waste activities
+prior to July 3, 1986, as well.'' The commenter cites the State of Washington's recent definition of ``solid waste
+management unit'' which was added to the State's Dangerous Waste regulations, which ``means any discernable location
+at a facility, as defined for the purposes of corrective action, where solid wastes 
+
+have been placed at any time
+
+. . .'' (emphasis added). The commenter further states that ``the preamble to EPA's corrective action
+rule did not attempt to retroactively apply EPA's jurisdiction over mixed waste prior to July 3, 1986.'' 
+
+In response, EPA has consistently interpreted the radioactive mixed waste to be a solid waste under RCRA for the purposes
+of RCRA corrective action (
+
+see 
+
+55 FR 30798 at 30860, July 27, 1990 and 51 FR 24504 Footnote 
+
+#
+
+1, July 3, 1986). Therefore, it is clear that EPA considers radioactive mixed waste to be a solid waste under RCRA for
+purposes of RCRA corrective action. Corrective actions under RCRA which address releases from solid waste management
+units are not limited to releases of hazardous waste or constituents after any certain date. EPA's proposed definition
+of a ``solid waste management unit'' in EPA's proposed Subpart S rule (
+
+see 
+
+55 FR at 30808-30809) and the State of Washington's promulgated definition of a ``solid waste management unit'' in
+its Dangerous Waste Regulations (
+
+see 
+
+WAC 173-303-646(2)(a)) both define a SWMU to include in part (state regulatory language differences are in brackets):
+
+
+ 
+
+
+Any discernable unit [location at a facility] . . . at which solid wastes have been placed at any time,
+irrespective of whether the unit was intended for the management of solid or hazardous [dangerous] waste. 
+
+ 
+
+
+Thus, EPA's determination that the hazardous component of radioactive mixed waste was 
+
+regulated 
+
+and subject to permitting requirements of Subtitle C of RCRA in 1986 does not affect EPA's ability (or a state's ability,
+when that state has been authorized for corrective action under RCRA) to require 
+
+corrective action 
+
+for the hazardous component of radioactive solid waste at SWMUs where such waste was disposed of before 1986. 
+
+
+
+</TEXT>
+</DOC>
+
+
+
+<DOC>
+<DOCNO> FR941104-0-00025 </DOCNO>
+<PARENT> FR941104-0-00009 </PARENT>
+<TEXT>
+ 
+
+EPA, in its authorization of the State of Washington for RCRA corrective action, is not authorizing the State to ```regulate'
+mixed waste disposed of prior to 1986'' as suggested by the commenter. Rather, the authorization will allow the State
+to assert 
+
+corrective action
+
+ (cleanup of past releases) jurisdiction, which is not RCRA 
+
+operational
+
+ (day-to-day waste handling and management) jurisdiction, over solid waste (which includes the hazardous component
+of radioactive mixed waste) at solid waste management units at facilities seeking permits under RCRA. The State of
+Washington received final authorization for RCRA operational jurisdiction over radioactive mixed waste on November
+23, 1987. 
+
+A commenter pointed out that EPA was not authorizing the State of Washington at this time for the ``omnibus'' authority
+of section 3005(c)(3) of RCRA, yet the State corrective action program and regulations indicate that the State will
+assert authority over releases of hazardous waste and constituents from ``non-SWMU'' units and areas. The commenter
+then asks 

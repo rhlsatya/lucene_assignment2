@@ -37,6 +37,7 @@ public class parser_fbis {
     	public static void parseFile(String path) throws Exception 
     	{
     		File file = new File(path);
+    		System.out.println(file.getName());
     		Document doc = Jsoup.parse(file, "UTF-8", "");
     		
             
@@ -82,10 +83,12 @@ public class parser_fbis {
         		h7 = e.getElementsByTag("h7").text();
         		h8 = e.getElementsByTag("h8").text();
         		
-        		heading = h1 + h2 + h3 + h4 + h5 + h6 + h7 + h8;
+        		heading = h1 + ". " + h2 + ". " + h3 + ". " + h4 + ". " + h5 + ". " + h6 + ". " + h7 + ". " + h8;
         		
         		IndexFbis ifb = new IndexFbis();
         		ifb.setFiles(docNo, textContent, abs, date1, fContent, heading);
+        		if(docNo.contains("FBIS4-68893"))
+    	    		break;
         }
         
     	}

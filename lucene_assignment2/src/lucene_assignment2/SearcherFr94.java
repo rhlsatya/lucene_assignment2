@@ -42,6 +42,8 @@ public class SearcherFr94 {
 	    //EnglishAnalyzer analyzer = new EnglishAnalyzer();
 	    booleanQuery = new BooleanQuery.Builder();
 	    addQuery(queryTitle, 1);
+	    addQuery(queryDesc, 0);
+	    addQuery(queryNarr, 0);
 	    
 		    //-------------------//
 		
@@ -54,7 +56,7 @@ public class SearcherFr94 {
 	       // TokenStream reader1 = null;
 	        //TokenStream stream = analyzer.tokenStream(null, new StringReader("author"));
 	    TopDocs docs = searcher.search(booleanQuery.build(), 100);
-	        System.out.println ("length of top docs: " + docs.scoreDocs.length);
+	        //System.out.println ("length of top docs: " + docs.scoreDocs.length);
 	        int count = 0;
 	    for( ScoreDoc doc : docs.scoreDocs) {
 	        Document thisDoc = searcher.doc(doc.doc);
@@ -75,7 +77,7 @@ public class SearcherFr94 {
 		
 	}
 	
-	public void addQuery(String queryTitle, int flag) throws ParseException
+	public void addQuery(String query, int flag) throws ParseException
 	{
 		QueryParser parser1 = new QueryParser("usDept", analyzer);
 		QueryParser parser2 = new QueryParser("agency", analyzer);
@@ -85,13 +87,13 @@ public class SearcherFr94 {
 		QueryParser parser6 = new QueryParser("supplem", analyzer);
 		QueryParser parser7 = new QueryParser("textother", analyzer);
 		    
-		Query query1 = parser1.parse(queryTitle);
-		Query query2 = parser2.parse(queryTitle);
-		Query query3 = parser3.parse(queryTitle);
-		Query query4 = parser4.parse(queryTitle);
-		Query query5 = parser5.parse(queryTitle); // must
-		Query query6 = parser6.parse(queryTitle);
-		Query query7 = parser7.parse(queryTitle); // must
+		Query query1 = parser1.parse(query);
+		Query query2 = parser2.parse(query);
+		Query query3 = parser3.parse(query);
+		Query query4 = parser4.parse(query);
+		Query query5 = parser5.parse(query); // must
+		Query query6 = parser6.parse(query);
+		Query query7 = parser7.parse(query); // must
 		
 		
 		

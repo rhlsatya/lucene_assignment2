@@ -73,7 +73,7 @@ public class IndexFbis {
 		writer.addDocument(doc);
 		writer.close();
 		System.out.println(docNo + ": Indexed"); 
-	      
+	    
 	}
 	
 }

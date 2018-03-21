@@ -22,8 +22,8 @@ public class BuildQuery {
 		String queryNarr = "";
 		String queryNum = "";
 		String topDocsFr94[][] = new String[2][100];
-		int topDocsFbis[][] = new int[2][1000];
-		int topDocsLat[][] = new int[2][1000];
+		String topDocsFbis[][] = new String[2][1000];
+		String topDocsLat[][] = new String[2][1000];
 		int flag = 0;
 		while((line = br.readLine()) != null)
 		{
@@ -31,12 +31,15 @@ public class BuildQuery {
 			{
 				
 				//System.out.println("Sending data");
+				queryTitle = queryTitle.replaceAll("/", " ");
+				queryDesc = queryDesc.replaceAll("/", " ");
+				queryNarr = queryNarr.replaceAll("/", " ");
 				SearcherFr94 sf = new SearcherFr94();
 				topDocsFr94 = sf.getResults(queryTitle, queryDesc, queryNarr);
 				SearcherFbis sfb = new SearcherFbis();
-				topDocsFbis = sfb.getResults();
+				topDocsFbis = sfb.getResults(queryTitle, queryDesc, queryNarr);
 				SearcherLatimes sl = new SearcherLatimes();
-				topDocsLat = sl.getResults();
+				topDocsLat = sl.getResults(queryTitle, queryDesc, queryNarr);
 				BuildQuery bq = new BuildQuery();
 				bq.sortResults (queryNum, topDocsFr94, topDocsFbis, topDocsLat);
 //				 
@@ -97,12 +100,12 @@ public class BuildQuery {
 		}
 	}
 	
-	public void sortResults(String queryNum, String topDocsFr94[][], int topDocsFbis[][], int topDocsLat[][])
+	public void sortResults(String queryNum, String topDocsFr94[][], String topDocsFbis[][], String topDocsLat[][])
 	{
 		System.out.println(queryNum);
 		for(int i = 0; i < 100; i++)
 		{
-			System.out.println(topDocsFr94[i][0] + ": " + topDocsFr94[i][1]);
+			//System.out.println(topDocsFbis[i][0] + ": " + topDocsFbis[i][1]);
 		}
 		
 	}

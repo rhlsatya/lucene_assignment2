@@ -53,11 +53,12 @@ public class SearcherFbis {
 	    
 	   
 	    
-	    String results[][] = new String[100][2];
+	    
 	       // TokenStream reader1 = null;
 	        //TokenStream stream = analyzer.tokenStream(null, new StringReader("author"));
 	    TopDocs docs = searcher.search(booleanQuery.build(), 100);
-	        System.out.println ("length of top docs: " + docs.scoreDocs.length);
+	        //System.out.println ("length of top docs: " + docs.scoreDocs.length);
+	        String results[][] = new String[docs.scoreDocs.length][2];
 	        int count = 0;
 	    for( ScoreDoc doc : docs.scoreDocs) {
 	        Document thisDoc = searcher.doc(doc.doc);

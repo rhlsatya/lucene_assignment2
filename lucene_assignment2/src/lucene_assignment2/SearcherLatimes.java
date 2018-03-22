@@ -24,6 +24,7 @@ public class SearcherLatimes {
 	
 	public BooleanQuery.Builder booleanQuery;
 	public Analyzer analyzer;
+	public int retDocs;
 	public static void main(String args[]) throws IOException
 	{
 		
@@ -49,11 +50,14 @@ public class SearcherLatimes {
 	    
 	   
 	    
-	    String results[][] = new String[100][2];
+	    
 	       // TokenStream reader1 = null;
 	        //TokenStream stream = analyzer.tokenStream(null, new StringReader("author"));
-	    TopDocs docs = searcher.search(booleanQuery.build(), 100);
-	        //System.out.println ("length of top docs: " + docs.scoreDocs.length);
+	    TopDocs docs = searcher.search(booleanQuery.build(), 1000);
+	    retDocs = docs.scoreDocs.length;
+	    System.out.println ("length of top docs: " + retDocs);
+	        
+	    String results[][] = new String[retDocs][2];
 	        int count = 0;
 	    for( ScoreDoc doc : docs.scoreDocs) {
 	        Document thisDoc = searcher.doc(doc.doc);
@@ -120,6 +124,11 @@ public class SearcherLatimes {
 	    }
 	    
 	    
+	}
+	
+	public int getRetDocs()
+	{
+		return retDocs;
 	}
 
 }

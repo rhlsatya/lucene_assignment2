@@ -32,10 +32,6 @@ public class SearcherFr94 {
 	public  String[][] getResults(String queryTitle, String queryDesc, String queryNarr) throws IOException, ParseException
 	{
 		String index = "/Users/rahulsatya/Desktop/IndexedFiles/fr94/";
-	    String field = "author";
-	    String queries = null;
-	    int repeat = 0;
-	    boolean raw = false;
 	    IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(index)));
 	    IndexSearcher searcher = new IndexSearcher(reader);
 	    searcher.setSimilarity(new BM25Similarity());
@@ -53,10 +49,13 @@ public class SearcherFr94 {
 	    
 	   
 	    
-	    String results[][] = new String[100][2];
+	    
 	       // TokenStream reader1 = null;
 	        //TokenStream stream = analyzer.tokenStream(null, new StringReader("author"));
-	    TopDocs docs = searcher.search(booleanQuery.build(), 100);
+	    TopDocs docs = searcher.search(booleanQuery.build(), 1000);
+	    retDocs = docs.scoreDocs.length;
+        System.out.println ("length of top docs: " + retDocs);
+        String results[][] = new String[retDocs][2];
 	        //System.out.println ("length of top docs: " + docs.scoreDocs.length);
 	        int count = 0;
 	    for( ScoreDoc doc : docs.scoreDocs) {
@@ -112,18 +111,23 @@ public class SearcherFr94 {
 	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery4, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery6, Occur.SHOULD);
+	    booleanQuery.add(boostedTermQuery7, Occur.SHOULD);
+	    
 	    if(flag == 1)
 	    {
 	    		booleanQuery.add(boostedTermQuery5, Occur.MUST);
-		    booleanQuery.add(boostedTermQuery7, Occur.MUST);
-	    }
+		}
 	    else
 	    {
 	    		booleanQuery.add(boostedTermQuery5, Occur.SHOULD);
-		    booleanQuery.add(boostedTermQuery7, Occur.SHOULD);
-	    }
+		    }
 	    
 	    
+	}
+	
+	public int getRetDocs()
+	{
+		return retDocs;
 	}
 
 }

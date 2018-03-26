@@ -53,7 +53,7 @@ public class SearcherFt {
 	    
 	       // TokenStream reader1 = null;
 	        //TokenStream stream = analyzer.tokenStream(null, new StringReader("author"));
-	    TopDocs docs = searcher.search(booleanQuery.build(), 100);
+	    TopDocs docs = searcher.search(booleanQuery.build(), 1000);
 	    retDocs = docs.scoreDocs.length;
 	    System.out.println ("length of top docs: " + retDocs);
 	        

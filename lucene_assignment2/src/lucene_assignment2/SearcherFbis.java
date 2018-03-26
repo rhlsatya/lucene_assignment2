@@ -24,6 +24,7 @@ public class SearcherFbis {
 	
 	public BooleanQuery.Builder booleanQuery;
 	public Analyzer analyzer;
+	public int retDocs;
 	public static void main(String args[]) throws IOException
 	{
 		
@@ -32,10 +33,6 @@ public class SearcherFbis {
 	public  String[][] getResults(String queryTitle, String queryDesc, String queryNarr) throws IOException, ParseException
 	{
 		String index = "/Users/rahulsatya/Desktop/IndexedFiles/fbis/";
-	    String field = "author";
-	    String queries = null;
-	    int repeat = 0;
-	    boolean raw = false;
 	    IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(index)));
 	    IndexSearcher searcher = new IndexSearcher(reader);
 	    searcher.setSimilarity(new BM25Similarity());
@@ -56,9 +53,10 @@ public class SearcherFbis {
 	    
 	       // TokenStream reader1 = null;
 	        //TokenStream stream = analyzer.tokenStream(null, new StringReader("author"));
-	    TopDocs docs = searcher.search(booleanQuery.build(), 100);
-	        //System.out.println ("length of top docs: " + docs.scoreDocs.length);
-	        String results[][] = new String[docs.scoreDocs.length][2];
+	    TopDocs docs = searcher.search(booleanQuery.build(), 1000);
+	    retDocs = docs.scoreDocs.length;
+	        System.out.println ("length of top docs: " + retDocs);
+	        String results[][] = new String[retDocs][2];
 	        int count = 0;
 	    for( ScoreDoc doc : docs.scoreDocs) {
 	        Document thisDoc = searcher.doc(doc.doc);
@@ -66,7 +64,7 @@ public class SearcherFbis {
 	        results[count][1] = Float.toString(doc.score);
 	        count++;
 	            //System.out.println(thisDoc.get("docNo"));
-	        System.out.println(thisDoc.get("docNo") + ": " + doc.score);
+	        //System.out.println(thisDoc.get("docNo") + ": " + doc.score);
 	        //writer.write(queryNo + " " + thisDoc.get("index") + "\n");
 	    }
 	    
@@ -119,6 +117,11 @@ public class SearcherFbis {
 	    }
 	    
 	    
+	}
+	
+	public int getRetDocs()
+	{
+		return retDocs;
 	}
 
 }

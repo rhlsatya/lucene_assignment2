@@ -38,25 +38,25 @@ public class BuildQuery {
 				queryTitle = queryTitle.replaceAll("/", " ");
 				queryDesc = queryDesc.replaceAll("/", " ");
 				queryNarr = queryNarr.replaceAll("/", " ");
-//				SearcherFr94 sf = new SearcherFr94();
-//				topDocsFr94 = sf.getResults(queryTitle, queryDesc, queryNarr);
-//				retDocsFR94 = sf.getRetDocs();
-//				
-//				SearcherFbis sfb = new SearcherFbis();
-//				topDocsFbis = sfb.getResults(queryTitle, queryDesc, queryNarr);
-//				retDocsFBIS = sfb.getRetDocs();
-//				
+				SearcherFr94 sf = new SearcherFr94();
+				topDocsFr94 = sf.getResults(queryTitle, queryDesc, queryNarr);
+				retDocsFR94 = sf.getRetDocs();
+				
+				SearcherFbis sfb = new SearcherFbis();
+				topDocsFbis = sfb.getResults(queryTitle, queryDesc, queryNarr);
+				retDocsFBIS = sfb.getRetDocs();
 				
 				SearcherLatimes sl = new SearcherLatimes();
 				topDocsLat = sl.getResults(queryTitle, queryDesc, queryNarr);
 				retDocsLA = sl.getRetDocs();
 				
-//				SearcherFt sft = new SearcherFt();
-//				topDocsFt = sft.getResults(queryTitle, queryDesc, queryNarr);
-//				retDocsFT = sft.getRetDocs();
+				SearcherFt sft = new SearcherFt();
+				topDocsFt = sft.getResults(queryTitle, queryDesc, queryNarr);
+				retDocsFT = sft.getRetDocs();
 				
 				BuildQuery bq = new BuildQuery();
-				bq.sortResults (writer, queryNum, topDocsFr94, topDocsFbis, topDocsLat, topDocsFt, retDocsFR94, retDocsFBIS, retDocsLA, retDocsFT);
+				bq.sortResults (writer, queryNum, topDocsFr94, topDocsFbis, topDocsLat, topDocsFt,
+						retDocsFR94, retDocsFBIS, retDocsLA, retDocsFT);
 //				 
 			}
 			else if (line.startsWith("<num>"))
@@ -118,24 +118,25 @@ public class BuildQuery {
 		queryTitle = queryTitle.replaceAll("/", " ");
 		queryDesc = queryDesc.replaceAll("/", " ");
 		queryNarr = queryNarr.replaceAll("/", " ");
-//		SearcherFr94 sf = new SearcherFr94();
-//		topDocsFr94 = sf.getResults(queryTitle, queryDesc, queryNarr);
-//		retDocsFR94 = sf.getRetDocs();
-//		
-//		SearcherFbis sfb = new SearcherFbis();
-//		topDocsFbis = sfb.getResults(queryTitle, queryDesc, queryNarr);
-//		retDocsFBIS = sfb.getRetDocs();
+		SearcherFr94 sf = new SearcherFr94();
+		topDocsFr94 = sf.getResults(queryTitle, queryDesc, queryNarr);
+		retDocsFR94 = sf.getRetDocs();
+		
+		SearcherFbis sfb = new SearcherFbis();
+		topDocsFbis = sfb.getResults(queryTitle, queryDesc, queryNarr);
+		retDocsFBIS = sfb.getRetDocs();
 		
 		SearcherLatimes sl = new SearcherLatimes();
 		topDocsLat = sl.getResults(queryTitle, queryDesc, queryNarr);
 		retDocsLA = sl.getRetDocs();
 		
-//		SearcherFt sft = new SearcherFt();
-//		topDocsFt = sft.getResults(queryTitle, queryDesc, queryNarr);
-//		retDocsFT = sft.getRetDocs();
+		SearcherFt sft = new SearcherFt();
+		topDocsFt = sft.getResults(queryTitle, queryDesc, queryNarr);
+		retDocsFT = sft.getRetDocs();
 		
 		BuildQuery bq = new BuildQuery();
-		bq.sortResults (writer, queryNum, topDocsFr94, topDocsFbis, topDocsLat, topDocsFt, retDocsFR94, retDocsFBIS, retDocsLA, retDocsFT);
+		bq.sortResults (writer, queryNum, topDocsFr94, topDocsFbis, topDocsLat, topDocsFt,
+				retDocsFR94, retDocsFBIS, retDocsLA, retDocsFT);
 		
 		
 		writer.close();
@@ -181,7 +182,7 @@ public class BuildQuery {
 			tempResults[count][0] = topDocsFt[i][0];
 			tempResults[count][1] = topDocsFt[i][1];
 			score[count] = Double.parseDouble(topDocsFt[i][1]);
-			System.out.println(i + " - " + tempResults[i][0] + ": " + tempResults[i][1]);
+			//System.out.println(count + " - " + tempResults[count][0] + ": " + tempResults[count][1]);
 			count++;
 		}
 		
@@ -202,10 +203,14 @@ public class BuildQuery {
                 }  
             }  
             
-            writer.write(queryNum + " " + tempResults[index][0]);
-            
             finalResults[counter][0] = tempResults[index][0];
             finalResults[counter][1] = Double.toString(score[index]);
+            
+            counter++;
+            
+            writer.write(counter + "		" + queryNum + " " + tempResults[index][0] + "\n");
+            //System.out.println(queryNum + " " + tempResults[index][0]);
+            
             temp = score[index];   
             score[index] = score[i];  
             score[i] = temp;  

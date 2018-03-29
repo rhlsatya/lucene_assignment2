@@ -208,7 +208,7 @@ public class BuildQuery {
             
             counter++;
             
-            writer.write(counter + "		" + queryNum + " " + tempResults[index][0] + "\n");
+            writer.write(queryNum + " " + tempResults[index][0] +  " " + tempResults[index][1] + "\n");
             //System.out.println(queryNum + " " + tempResults[index][0]);
             
             temp = score[index];   

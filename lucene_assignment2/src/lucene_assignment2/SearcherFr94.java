@@ -31,7 +31,7 @@ public class SearcherFr94 {
 	
 	public  String[][] getResults(String queryTitle, String queryDesc, String queryNarr) throws IOException, ParseException
 	{
-		String index = "/Users/rahulsatya/Desktop/IndexedFiles/fr94/";
+		String index = "/home/ubuntu/lucene_assignment2/lucene_assignment2/IndexedFiles/fr94/";
 	    IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(index)));
 	    IndexSearcher searcher = new IndexSearcher(reader);
 	    searcher.setSimilarity(new BM25Similarity());

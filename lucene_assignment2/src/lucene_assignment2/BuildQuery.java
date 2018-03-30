@@ -10,7 +10,7 @@ public class BuildQuery {
 	
 	public static void main(String args[]) throws IOException, ParseException
 	{
-		BufferedReader br = new BufferedReader(new FileReader(new File("/home/ubuntu/lucene_assignment2/lucene_assignment2/CS7IS3-Assignment2-Topics/")));
+		BufferedReader br = new BufferedReader(new FileReader(new File("/home/sujay/lucene_assignment2/lucene_assignment2/CS7IS3-Assignment2-Topics/")));
 		String line;
 		int i = 0;
 		String queryTitle = "";
@@ -26,7 +26,7 @@ public class BuildQuery {
 		int retDocsLA = 0;
 		int retDocsFT = 0;
 		int flag = 0;
-		File file = new File("/home/ubuntu/lucene_assignment2/lucene_assignment2/results.txt");
+		File file = new File("/home/sujay/lucene_assignment2/lucene_assignment2/results.txt");
 		BufferedWriter writer = new BufferedWriter(new FileWriter(file));
 		
 		while((line = br.readLine()) != null)
@@ -208,7 +208,7 @@ public class BuildQuery {
             
             counter++;
             
-            writer.write(queryNum + " 0 " + tempResults[index][0] + " " + tempResults[index][1] + " 0" + "\n");
+            writer.write(queryNum + " 0 " + tempResults[index][0] + " " + tempResults[index][1] + "\n");
             //System.out.println(queryNum + " " + tempResults[index][0]);
             
             temp = score[index];   

@@ -32,7 +32,7 @@ public class SearcherLatimes {
 	
 	public  String[][] getResults(String queryTitle, String queryDesc, String queryNarr) throws IOException, ParseException
 	{
-		String index = "/home/ubuntu/lucene_assignment2/lucene_assignment2/IndexedFiles/latimes/";
+		String index = "/home/sujay/lucene_assignment2/lucene_assignment2/IndexedFiles/latimes/";
 	    IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(index)));
 	    IndexSearcher searcher = new IndexSearcher(reader);
 	    searcher.setSimilarity(new BM25Similarity());

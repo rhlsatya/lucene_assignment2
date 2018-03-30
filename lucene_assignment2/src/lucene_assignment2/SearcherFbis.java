@@ -105,16 +105,16 @@ public class SearcherFbis {
 	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery4, Occur.SHOULD);
 	    
-	    if(flag == 1)
-	    {
-	    		booleanQuery.add(boostedTermQuery5, Occur.MUST);
-		    
-	    }
-	    else
-	    {
+//	    if(flag == 1)
+//	    {
+//	    		booleanQuery.add(boostedTermQuery5, Occur.MUST);
+//		    
+//	    }
+//	    else
+//	    {
 	    		booleanQuery.add(boostedTermQuery5, Occur.SHOULD);
-		    
-	    }
+//		    
+//	    }
 	    
 	    
 	}

@@ -65,7 +65,7 @@ public class SearcherFbis {
 //        boostFields.put("abs",5f);
 //        boostFields.put("date",2f);
 //        boostFields.put("fcontent",2f);
-        boostFields.put("textcontent",75f);
+        boostFields.put("textcontent",85f);
         //"abs","date","fcontent"
         //.1114
         // .1117 is without the similarity for fr94

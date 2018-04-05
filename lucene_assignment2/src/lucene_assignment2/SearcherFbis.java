@@ -70,6 +70,7 @@ public class SearcherFbis {
 		
 	    // 0.0843
         //.0920
+        //.0994
 	    //java lucene_assignment2.BuildQuery
 	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java
         //./trec_eval/trec_eval qrels.assignment2.part1 results.txt

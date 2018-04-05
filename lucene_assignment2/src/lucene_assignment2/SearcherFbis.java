@@ -69,6 +69,7 @@ public class SearcherFbis {
         //"abs","date","fcontent"
 //        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","abs","date","fcontent","textcontent"}, analyzer, boostFields);
 //        parser.setAllowLeadingWildcard(true);
+//        public BooleanQuery.Builder booleanQuery;
 //        Query query1 = parser.parse(QueryParser.escape(queryTitle + " " + queryDesc +  " " + queryNarr));
 //		Query query2 = parser.parse(QueryParser.escape(queryDesc));
 //		Query query3 = parser.parse(QueryParser.escape(queryNarr));

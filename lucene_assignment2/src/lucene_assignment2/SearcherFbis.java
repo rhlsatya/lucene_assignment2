@@ -21,6 +21,9 @@ import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.search.BooleanClause.Occur;
 import org.apache.lucene.search.similarities.BM25Similarity;
+import org.apache.lucene.search.similarities.ClassicSimilarity;
+import org.apache.lucene.search.similarities.MultiSimilarity;
+import org.apache.lucene.search.similarities.Similarity;
 import org.apache.lucene.store.FSDirectory;
 
 public class SearcherFbis {
@@ -38,7 +41,8 @@ public class SearcherFbis {
 		String index = "/home/ubuntu/lucene_assignment2/lucene_assignment2/IndexedFiles/fbis/";
 	    IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(index)));
 	    IndexSearcher searcher = new IndexSearcher(reader);
-	    searcher.setSimilarity(new BM25Similarity());
+	    Similarity similarity = new MultiSimilarity(new Similarity[]{new BM25Similarity(),new ClassicSimilarity()});
+	    searcher.setSimilarity(similarity);
 	    analyzer = new StandardAnalyzer();
 	    //EnglishAnalyzer analyzer = new EnglishAnalyzer();
 	    booleanQuery = new BooleanQuery.Builder();
@@ -59,12 +63,14 @@ public class SearcherFbis {
 		Query boostedTermQuery1 = new BoostQuery(query1, (float) 16.5);
 	    Query boostedTermQuery2 = new BoostQuery(query2, 2);
 	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 2.5);
-	    booleanQuery.add(boostedTermQuery1, Occur.SHOULD);
+	    booleanQuery.add(boostedTermQuery1, Occur.MUST);
 	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
 		
 	    // 0.843
-        
+	    //java lucene_assignment2.BuildQuery
+	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java
+        //./trec_eval/trec_eval qrels.assignment2.part1 results.txt
 		    //-------------------//
 		
 	    

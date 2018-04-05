@@ -9,6 +9,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Paths;
 
 import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
@@ -50,7 +51,7 @@ public class IndexFbis {
 	{
 		String indexPath = "/Users/rahulsatya/Desktop/IndexedFiles/fbis";
 		Directory dir = FSDirectory.open(Paths.get(indexPath));
-		Analyzer analyzer = new StandardAnalyzer();
+		Analyzer analyzer = new EnglishAnalyzer();
 		IndexWriterConfig iwc = new IndexWriterConfig(analyzer);
 		IndexWriter writer = new IndexWriter(dir, iwc);
 		Document doc = new Document();

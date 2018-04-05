@@ -113,14 +113,14 @@ public class SearcherFr94 {
 	    booleanQuery.add(boostedTermQuery6, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery7, Occur.SHOULD);
 	    
-//	    if(flag == 1)
-//	    {
-//	    		booleanQuery.add(boostedTermQuery5, Occur.MUST);
-//		}
-//	    else
-//	    {
+	    if(flag == 1)
+	    {
+	    		booleanQuery.add(boostedTermQuery5, Occur.MUST);
+		}
+	    else
+	    {
 	    		booleanQuery.add(boostedTermQuery5, Occur.SHOULD);
-		 //   }
+	    }
 	    
 	    
 	}

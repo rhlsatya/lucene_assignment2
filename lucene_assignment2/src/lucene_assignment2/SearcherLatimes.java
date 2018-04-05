@@ -92,7 +92,7 @@ public class SearcherLatimes {
 	
 	public void addQuery(String query, int flag) throws ParseException
 	{
-//		QueryParser parser1 = new QueryParser("byline", analyzer);
+		QueryParser parser1 = new QueryParser("byline", analyzer);
 		QueryParser parser2 = new QueryParser("correction", analyzer);
 		QueryParser parser3 = new QueryParser("headline", analyzer);
 		QueryParser parser4 = new QueryParser("subject", analyzer);
@@ -100,7 +100,7 @@ public class SearcherLatimes {
 //		QueryParser parser6 = new QueryParser("type", analyzer);
 		
 		    
-//		Query query1 = parser1.parse(query);
+		Query query1 = parser1.parse(query);
 		Query query2 = parser2.parse(query);
 		Query query3 = parser3.parse(query);
 		Query query4 = parser4.parse(query);
@@ -110,7 +110,7 @@ public class SearcherLatimes {
 		
 		
 		
-//	    Query boostedTermQuery1 = new BoostQuery(query1, (float) 1.5);
+	    Query boostedTermQuery1 = new BoostQuery(query1, (float) 1.5);
 	    Query boostedTermQuery2 = new BoostQuery(query2, 2);
 	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 2.5);
 	    Query boostedTermQuery4 = new BoostQuery(query4, (float) 6.5);
@@ -119,7 +119,7 @@ public class SearcherLatimes {
 	    
 	    
 	    
-//	    booleanQuery.add(boostedTermQuery1, Occur.SHOULD);
+	    booleanQuery.add(boostedTermQuery1, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery4, Occur.SHOULD);

@@ -42,23 +42,23 @@ public class SearcherFbis {
 		String index = "/home/ubuntu/lucene_assignment2/lucene_assignment2/IndexedFiles/fbis/";
 	    IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(index)));
 	    IndexSearcher searcher = new IndexSearcher(reader);
-//	    Similarity similarity = new MultiSimilarity(new Similarity[]{new BM25Similarity(),new ClassicSimilarity()});
-//	    searcher.setSimilarity(similarity);
+	    Similarity similarity = new MultiSimilarity(new Similarity[]{new BM25Similarity(),new ClassicSimilarity()});
+	    searcher.setSimilarity(similarity);
 	    analyzer = new EnglishAnalyzer();
 	    //EnglishAnalyzer analyzer = new EnglishAnalyzer();
 	    booleanQuery = new BooleanQuery.Builder();
-	    if(queryTitle.contains("supercritical fluids"))
-	    {
-	    	addQuery(queryTitle, 0);
-	    }
-	    else
-	    {
-	    	addQuery(queryTitle, 1);
-	    }
-	    
-	    //addQuery(queryTitle, 1);
-	    addQuery(queryDesc, 0);
-	    addQuery(queryNarr, 0);
+//	    if(queryTitle.contains("supercritical fluids"))
+//	    {
+//	    	addQuery(queryTitle, 0);
+//	    }
+//	    else
+//	    {
+//	    	addQuery(queryTitle, 1);
+//	    }
+//	    
+//	    //addQuery(queryTitle, 1);
+//	    addQuery(queryDesc, 0);
+//	    addQuery(queryNarr, 0);
 	    
 	    Map<String, Float> boostFields = new HashMap<String, Float>();
         boostFields.put("heading",10f);
@@ -67,21 +67,18 @@ public class SearcherFbis {
         boostFields.put("fcontent",2f);
         boostFields.put("textcontent",5f);
         //"abs","date","fcontent"
-//        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","abs","date","fcontent","textcontent"}, analyzer, boostFields);
-//        Query query1 = parser.parse(queryTitle);
-//		Query query2 = parser.parse(queryDesc);
-//		Query query3 = parser.parse(queryNarr);
-//		Query boostedTermQuery1 = new BoostQuery(query1, (float) 16.5);
-//	    Query boostedTermQuery2 = new BoostQuery(query2, 20);
-//	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 12.5);
-//	    booleanQuery.add(boostedTermQuery1, Occur.MUST);
-//	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
-//	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
-		//0.0730
-	    // 0.0843
-        //.0920
-        //.0994
-	    //0.0954
+        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","abs","date","fcontent","textcontent"}, analyzer, boostFields);
+        parser.setAllowLeadingWildcard(true);
+        Query query1 = parser.parse(queryTitle);
+		Query query2 = parser.parse(queryDesc);
+		Query query3 = parser.parse(queryNarr);
+		Query boostedTermQuery1 = new BoostQuery(query1, (float) 16.5);
+	    Query boostedTermQuery2 = new BoostQuery(query2, 20);
+	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 12.5);
+	    booleanQuery.add(boostedTermQuery1, Occur.MUST);
+	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
+	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
+		//0.1063
 	    //java lucene_assignment2.BuildQuery
 	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java
         //./trec_eval/trec_eval qrels.assignment2.part1 results.txt

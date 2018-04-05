@@ -64,16 +64,16 @@ public class IndexFbis {
 		
 		InputStream DocNo = new ByteArrayInputStream(docNo.getBytes(StandardCharsets.UTF_8));
 		InputStream TextContent = new ByteArrayInputStream(textContent.getBytes(StandardCharsets.UTF_8));
-		InputStream Abs = new ByteArrayInputStream(abs.getBytes(StandardCharsets.UTF_8));
-		InputStream Date1 = new ByteArrayInputStream(date1.getBytes(StandardCharsets.UTF_8));
+//		InputStream Abs = new ByteArrayInputStream(abs.getBytes(StandardCharsets.UTF_8));
+//		InputStream Date1 = new ByteArrayInputStream(date1.getBytes(StandardCharsets.UTF_8));
 		InputStream FContent = new ByteArrayInputStream(fContent.getBytes(StandardCharsets.UTF_8));
 		InputStream Heading = new ByteArrayInputStream(heading.getBytes(StandardCharsets.UTF_8));
 		
 		doc.add(new StringField("docNo", docNo, Field.Store.YES)); // to retain for later
 		doc.add(new TextField("docno", new BufferedReader(new InputStreamReader(DocNo, StandardCharsets.UTF_8))));
 		doc.add(new TextField("textcontent", new BufferedReader(new InputStreamReader(TextContent, StandardCharsets.UTF_8))));
-		doc.add(new TextField("abs", new BufferedReader(new InputStreamReader(Abs, StandardCharsets.UTF_8))));
-		doc.add(new TextField("date", new BufferedReader(new InputStreamReader(Date1, StandardCharsets.UTF_8))));
+//		doc.add(new TextField("abs", new BufferedReader(new InputStreamReader(Abs, StandardCharsets.UTF_8))));
+//		doc.add(new TextField("date", new BufferedReader(new InputStreamReader(Date1, StandardCharsets.UTF_8))));
 		doc.add(new TextField("fcontent", new BufferedReader(new InputStreamReader(FContent, StandardCharsets.UTF_8))));
 		doc.add(new TextField("heading", new BufferedReader(new InputStreamReader(Heading, StandardCharsets.UTF_8))));
 		

@@ -18,6 +18,10 @@ import org.apache.lucene.document.StringField;
 import org.apache.lucene.document.TextField;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.search.similarities.BM25Similarity;
+import org.apache.lucene.search.similarities.ClassicSimilarity;
+import org.apache.lucene.search.similarities.MultiSimilarity;
+import org.apache.lucene.search.similarities.Similarity;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
@@ -57,6 +61,8 @@ public class IndexFt
 		Directory dir = FSDirectory.open(Paths.get(indexPath));
 		Analyzer analyzer = new EnglishAnalyzer();
 		IndexWriterConfig iwc = new IndexWriterConfig(analyzer);
+		Similarity similarity = new MultiSimilarity(new Similarity[]{new BM25Similarity(),new ClassicSimilarity()});
+		iwc.setSimilarity(similarity);
 		IndexWriter writer = new IndexWriter(dir, iwc);
 		Document doc = new Document();
 		
@@ -67,7 +73,7 @@ public class IndexFt
 		InputStream Headline = new ByteArrayInputStream(headline.getBytes(StandardCharsets.UTF_8));
 		
 		doc.add(new StringField("docNo", docNo, Field.Store.YES)); // to retain for later
-		doc.add(new TextField("docno", new BufferedReader(new InputStreamReader(DocNo, StandardCharsets.UTF_8))));
+//		doc.add(new TextField("docno", new BufferedReader(new InputStreamReader(DocNo, StandardCharsets.UTF_8))));
 		doc.add(new TextField("textcontent", new BufferedReader(new InputStreamReader(TextContent, StandardCharsets.UTF_8))));
 		doc.add(new TextField("headline", new BufferedReader(new InputStreamReader(Headline, StandardCharsets.UTF_8))));
 		

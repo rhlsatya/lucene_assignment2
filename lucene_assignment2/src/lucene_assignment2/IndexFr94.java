@@ -74,17 +74,17 @@ public class IndexFr94 {
 		Directory dir = FSDirectory.open(Paths.get(indexPath));
 		Analyzer analyzer = new EnglishAnalyzer();
 		IndexWriterConfig iwc = new IndexWriterConfig(analyzer);
-//		Similarity similarity = new MultiSimilarity(new Similarity[]{new BM25Similarity(),new ClassicSimilarity()});
-//		iwc.setSimilarity(similarity);
+		Similarity similarity = new MultiSimilarity(new Similarity[]{new BM25Similarity(),new ClassicSimilarity()});
+		iwc.setSimilarity(similarity);
 		
 		IndexWriter writer = new IndexWriter(dir, iwc);
 		Document doc = new Document();
 		
 		
-		InputStream DocNo = new ByteArrayInputStream(docNo.getBytes(StandardCharsets.UTF_8));
-		InputStream UsDept = new ByteArrayInputStream(usDept.getBytes(StandardCharsets.UTF_8));
-		InputStream Agency = new ByteArrayInputStream(agency.getBytes(StandardCharsets.UTF_8));
-		InputStream UsBureau = new ByteArrayInputStream(usBureau.getBytes(StandardCharsets.UTF_8));
+//		InputStream DocNo = new ByteArrayInputStream(docNo.getBytes(StandardCharsets.UTF_8));
+//		InputStream UsDept = new ByteArrayInputStream(usDept.getBytes(StandardCharsets.UTF_8));
+//		InputStream Agency = new ByteArrayInputStream(agency.getBytes(StandardCharsets.UTF_8));
+//		InputStream UsBureau = new ByteArrayInputStream(usBureau.getBytes(StandardCharsets.UTF_8));
 		InputStream DocTitle = new ByteArrayInputStream(docTitle.getBytes(StandardCharsets.UTF_8));
 		InputStream Summary = new ByteArrayInputStream(summary.getBytes(StandardCharsets.UTF_8));
 		InputStream Supplem = new ByteArrayInputStream(supplem.getBytes(StandardCharsets.UTF_8));
@@ -92,9 +92,9 @@ public class IndexFr94 {
 		
 		doc.add(new StringField("docNo", docNo, Field.Store.YES));
 		//doc.add(new TextField("docno", new BufferedReader(new InputStreamReader(DocNo, StandardCharsets.UTF_8))));
-		doc.add(new TextField("usdept", new BufferedReader(new InputStreamReader(UsDept, StandardCharsets.UTF_8))));
-		doc.add(new TextField("agency", new BufferedReader(new InputStreamReader(Agency, StandardCharsets.UTF_8))));
-		doc.add(new TextField("usbureau", new BufferedReader(new InputStreamReader(UsBureau, StandardCharsets.UTF_8))));
+//		doc.add(new TextField("usdept", new BufferedReader(new InputStreamReader(UsDept, StandardCharsets.UTF_8))));
+//		doc.add(new TextField("agency", new BufferedReader(new InputStreamReader(Agency, StandardCharsets.UTF_8))));
+//		doc.add(new TextField("usbureau", new BufferedReader(new InputStreamReader(UsBureau, StandardCharsets.UTF_8))));
 		doc.add(new TextField("dotitle", new BufferedReader(new InputStreamReader(DocTitle, StandardCharsets.UTF_8))));
 		doc.add(new TextField("summary", new BufferedReader(new InputStreamReader(Summary, StandardCharsets.UTF_8))));
 		doc.add(new TextField("supplem", new BufferedReader(new InputStreamReader(Supplem, StandardCharsets.UTF_8))));

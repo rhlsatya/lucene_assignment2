@@ -46,40 +46,40 @@ public class SearcherFr94 {
 	    analyzer = new EnglishAnalyzer();
 	    //EnglishAnalyzer analyzer = new EnglishAnalyzer();
 	    booleanQuery = new BooleanQuery.Builder();
-	    if(queryTitle.contains("supercritical fluids"))
-	    {
-	    	addQuery(queryTitle, 0);
-	    }
-	    else
-	    {
-	    	addQuery(queryTitle, 1);
-	    }
-	    //addQuery(queryTitle, 1);
-	    addQuery(queryDesc, 0);
-	    addQuery(queryNarr, 0);
+//	    if(queryTitle.contains("supercritical fluids"))
+//	    {
+//	    	addQuery(queryTitle, 0);
+//	    }
+//	    else
+//	    {
+//	    	addQuery(queryTitle, 1);
+//	    }
+//	    //addQuery(queryTitle, 1);
+//	    addQuery(queryDesc, 0);
+//	    addQuery(queryNarr, 0);
 	    
 		    //-------------------//
 		
 	    
 	//as
-//	    Map<String, Float> boostFields = new HashMap<String, Float>();
-//        boostFields.put("doctitle",100f);
-//        boostFields.put("summary",50f);
-//    
-//        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"doctitle","summary"}, analyzer, boostFields);
-//        parser.setAllowLeadingWildcard(true);
-//        
-//        Query query1 = parser.parse(queryTitle);
-//		Query query2 = parser.parse(queryDesc);
-//		Query query3 = parser.parse(queryNarr);
-//		
-//		Query boostedTermQuery1 = new BoostQuery(query1, (float) 30.5);
-//	    Query boostedTermQuery2 = new BoostQuery(query2, 30);
-//	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 7.5);
-//	    booleanQuery.add(boostedTermQuery1, Occur.MUST);
-//	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
-//	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
-//	    
+	    Map<String, Float> boostFields = new HashMap<String, Float>();
+        boostFields.put("doctitle",100f);
+        boostFields.put("summary",50f);
+    
+        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"doctitle","summary"}, analyzer, boostFields);
+        parser.setAllowLeadingWildcard(true);
+        
+        Query query1 = parser.parse(queryTitle);
+		Query query2 = parser.parse(queryDesc);
+		Query query3 = parser.parse(queryNarr);
+		
+		Query boostedTermQuery1 = new BoostQuery(query1, (float) 30.5);
+	    Query boostedTermQuery2 = new BoostQuery(query2, 30);
+	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 7.5);
+	    booleanQuery.add(boostedTermQuery1, Occur.MUST);
+	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
+	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
+	    
 	    
 	    
 	   

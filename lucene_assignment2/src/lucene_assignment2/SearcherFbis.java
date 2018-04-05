@@ -46,18 +46,18 @@ public class SearcherFbis {
 	    analyzer = new StandardAnalyzer();
 	    //EnglishAnalyzer analyzer = new EnglishAnalyzer();
 	    booleanQuery = new BooleanQuery.Builder();
-//	    if(queryTitle.contains("supercritical fluids"))
-//	    {
-//	    	addQuery(queryTitle, 0);
-//	    }
-//	    else
-//	    {
-//	    	addQuery(queryTitle, 1);
-//	    }
-//	    
-//	    //addQuery(queryTitle, 1);
-//	    addQuery(queryDesc, 0);
-//	    addQuery(queryNarr, 0);
+	    if(queryTitle.contains("supercritical fluids"))
+	    {
+	    	addQuery(queryTitle, 0);
+	    }
+	    else
+	    {
+	    	addQuery(queryTitle, 1);
+	    }
+	    
+	    //addQuery(queryTitle, 1);
+	    addQuery(queryDesc, 0);
+	    addQuery(queryNarr, 0);
 	    
 	    Map<String, Float> boostFields = new HashMap<String, Float>();
         boostFields.put("heading",10f);
@@ -66,16 +66,16 @@ public class SearcherFbis {
         boostFields.put("fcontent",2f);
         boostFields.put("textcontent",5f);
         //"abs","date","fcontent"
-        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","abs","date","fcontent","textcontent"}, analyzer, boostFields);
-        Query query1 = parser.parse(queryTitle);
-		Query query2 = parser.parse(queryDesc);
-		Query query3 = parser.parse(queryNarr);
-		Query boostedTermQuery1 = new BoostQuery(query1, (float) 16.5);
-	    Query boostedTermQuery2 = new BoostQuery(query2, 20);
-	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 12.5);
-	    booleanQuery.add(boostedTermQuery1, Occur.MUST);
-	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
-	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
+//        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","abs","date","fcontent","textcontent"}, analyzer, boostFields);
+//        Query query1 = parser.parse(queryTitle);
+//		Query query2 = parser.parse(queryDesc);
+//		Query query3 = parser.parse(queryNarr);
+//		Query boostedTermQuery1 = new BoostQuery(query1, (float) 16.5);
+//	    Query boostedTermQuery2 = new BoostQuery(query2, 20);
+//	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 12.5);
+//	    booleanQuery.add(boostedTermQuery1, Occur.MUST);
+//	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
+//	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
 		//0.0730
 	    // 0.0843
         //.0920
@@ -142,18 +142,20 @@ public class SearcherFbis {
 	    
 	    
 	    
-	    booleanQuery.add(boostedTermQuery1, Occur.SHOULD);
+	    
 	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery4, Occur.SHOULD);
 	    
 	    if(flag == 1)
 	    {
+	    	booleanQuery.add(boostedTermQuery1, Occur.MUST);
 	    		booleanQuery.add(boostedTermQuery5, Occur.MUST);
 		    
 	    }
 	    else
 	    {
+	    	booleanQuery.add(boostedTermQuery1, Occur.SHOULD);
 	    		booleanQuery.add(boostedTermQuery5, Occur.SHOULD);
 		    
 	    }

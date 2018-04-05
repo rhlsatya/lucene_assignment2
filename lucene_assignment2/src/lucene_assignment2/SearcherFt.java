@@ -35,7 +35,7 @@ public class SearcherFt {
 		String index = "/home/ubuntu/lucene_assignment2/lucene_assignment2/IndexedFiles/ft/";
 	    IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(index)));
 	    IndexSearcher searcher = new IndexSearcher(reader);
-	    searcher.setSimilarity(new BM25Similarity());
+	    //searcher.setSimilarity(new BM25Similarity());
 	    analyzer = new StandardAnalyzer();
 	    //EnglishAnalyzer analyzer = new EnglishAnalyzer();
 	    booleanQuery = new BooleanQuery.Builder();

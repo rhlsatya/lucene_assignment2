@@ -69,9 +69,10 @@ public class SearcherFbis {
         //"abs","date","fcontent"
         MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","abs","date","fcontent","textcontent"}, analyzer, boostFields);
         parser.setAllowLeadingWildcard(true);
-        Query query1 = parser.parse(queryTitle);
-		Query query2 = parser.parse(queryDesc);
-		Query query3 = parser.parse(queryNarr);
+        Query query1 = parser.parse(QueryParser.escape(queryTitle));
+		Query query2 = parser.parse(QueryParser.escape(queryDesc));
+		Query query3 = parser.parse(QueryParser.escape(queryNarr));
+		
 		Query boostedTermQuery1 = new BoostQuery(query1, (float) 16.5);
 	    Query boostedTermQuery2 = new BoostQuery(query2, 20);
 	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 12.5);

@@ -1,6 +1,8 @@
 package lucene_assignment2;
 import java.io.*;
 import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
@@ -8,6 +10,7 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.BooleanQuery;
@@ -43,22 +46,46 @@ public class SearcherFr94 {
 	    analyzer = new EnglishAnalyzer();
 	    //EnglishAnalyzer analyzer = new EnglishAnalyzer();
 	    booleanQuery = new BooleanQuery.Builder();
-	    if(queryTitle.contains("supercritical fluids"))
-	    {
-	    	addQuery(queryTitle, 0);
-	    }
-	    else
-	    {
-	    	addQuery(queryTitle, 1);
-	    }
-	    //addQuery(queryTitle, 1);
-	    addQuery(queryDesc, 0);
-	    addQuery(queryNarr, 0);
+//	    if(queryTitle.contains("supercritical fluids"))
+//	    {
+//	    	addQuery(queryTitle, 0);
+//	    }
+//	    else
+//	    {
+//	    	addQuery(queryTitle, 1);
+//	    }
+//	    //addQuery(queryTitle, 1);
+//	    addQuery(queryDesc, 0);
+//	    addQuery(queryNarr, 0);
 	    
 		    //-------------------//
 		
 	    
 	
+	    Map<String, Float> boostFields = new HashMap<String, Float>();
+        boostFields.put("doctitle",20f);
+//        boostFields.put("abs",5f);
+//        boostFields.put("date",2f);
+//        boostFields.put("fcontent",2f);
+        boostFields.put("summary",155f);
+        //"abs","date","fcontent"
+        //.1114
+        // .1117 is without the similarity for fr94
+        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"doctitle","summary"}, analyzer, boostFields);
+        parser.setAllowLeadingWildcard(true);
+        
+        Query query1 = parser.parse(QueryParser.escape(queryTitle));
+		Query query2 = parser.parse(QueryParser.escape(queryDesc));
+		Query query3 = parser.parse(QueryParser.escape(queryNarr));
+		
+		Query boostedTermQuery1 = new BoostQuery(query1, (float) 30.5);
+	    Query boostedTermQuery2 = new BoostQuery(query2, 30);
+	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 7.5);
+	    booleanQuery.add(boostedTermQuery1, Occur.MUST);
+	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
+	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
+	    
+	    
 	    
 	   
 	    
@@ -95,7 +122,7 @@ public class SearcherFr94 {
 //		QueryParser parser1 = new QueryParser("usDept", analyzer);
 //		QueryParser parser2 = new QueryParser("agency", analyzer);
 //		QueryParser parser3 = new QueryParser("usBureau", analyzer);
-		QueryParser parser4 = new QueryParser("docTitle", analyzer);
+		QueryParser parser4 = new QueryParser("doctitle", analyzer);
 		QueryParser parser5 = new QueryParser("summary", analyzer);
 //		QueryParser parser6 = new QueryParser("supplem", analyzer);
 //		QueryParser parser7 = new QueryParser("textother", analyzer);

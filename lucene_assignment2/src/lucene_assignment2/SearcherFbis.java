@@ -42,23 +42,23 @@ public class SearcherFbis {
 		String index = "/home/ubuntu/lucene_assignment2/lucene_assignment2/IndexedFiles/fbis/";
 	    IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(index)));
 	    IndexSearcher searcher = new IndexSearcher(reader);
-	    Similarity similarity = new MultiSimilarity(new Similarity[]{new BM25Similarity(),new ClassicSimilarity()});
-	    searcher.setSimilarity(similarity);
+//	    Similarity similarity = new MultiSimilarity(new Similarity[]{new BM25Similarity(),new ClassicSimilarity()});
+//	    searcher.setSimilarity(similarity);
 	    analyzer = new EnglishAnalyzer();
 	    //EnglishAnalyzer analyzer = new EnglishAnalyzer();
 	    booleanQuery = new BooleanQuery.Builder();
-//	    if(queryTitle.contains("supercritical fluids"))
-//	    {
-//	    	addQuery(queryTitle, 0);
-//	    }
-//	    else
-//	    {
-//	    	addQuery(queryTitle, 1);
-//	    }
-//	    
-//	    //addQuery(queryTitle, 1);
-//	    addQuery(queryDesc, 0);
-//	    addQuery(queryNarr, 0);
+	    if(queryTitle.contains("supercritical fluids"))
+	    {
+	    	addQuery(queryTitle, 0);
+	    }
+	    else
+	    {
+	    	addQuery(queryTitle, 1);
+	    }
+	    
+	    //addQuery(queryTitle, 1);
+	    addQuery(queryDesc, 0);
+	    addQuery(queryNarr, 0);
 	    
 	    Map<String, Float> boostFields = new HashMap<String, Float>();
         boostFields.put("heading",10f);
@@ -67,9 +67,9 @@ public class SearcherFbis {
         boostFields.put("fcontent",2f);
         boostFields.put("textcontent",5f);
         //"abs","date","fcontent"
-        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","abs","date","fcontent","textcontent"}, analyzer, boostFields);
-        parser.setAllowLeadingWildcard(true);
-        Query query1 = parser.parse(QueryParser.escape(queryTitle + " " + queryDesc +  " " + queryNarr));
+//        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","abs","date","fcontent","textcontent"}, analyzer, boostFields);
+//        parser.setAllowLeadingWildcard(true);
+//        Query query1 = parser.parse(QueryParser.escape(queryTitle + " " + queryDesc +  " " + queryNarr));
 //		Query query2 = parser.parse(QueryParser.escape(queryDesc));
 //		Query query3 = parser.parse(QueryParser.escape(queryNarr));
 //		
@@ -93,7 +93,7 @@ public class SearcherFbis {
 	    
 	       // TokenStream reader1 = null;
 	        //TokenStream stream = analyzer.tokenStream(null, new StringReader("author"));
-	    TopDocs docs = searcher.search(query1, 1000);//booleanQuery.build(), 1000);
+	    TopDocs docs = searcher.search(booleanQuery.build(), 1000);
 	    retDocs = docs.scoreDocs.length;
 	        System.out.println ("length of top docs: " + retDocs);
 	        String results[][] = new String[retDocs][2];

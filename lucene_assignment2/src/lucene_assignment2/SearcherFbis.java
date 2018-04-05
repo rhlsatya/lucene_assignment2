@@ -142,20 +142,20 @@ public class SearcherFbis {
 	    
 	    
 	    
-	    
+	    booleanQuery.add(boostedTermQuery1, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery4, Occur.SHOULD);
 	    
 	    if(flag == 1)
 	    {
-	    	booleanQuery.add(boostedTermQuery1, Occur.MUST);
+	    	
 	    		booleanQuery.add(boostedTermQuery5, Occur.MUST);
 		    
 	    }
 	    else
 	    {
-	    	booleanQuery.add(boostedTermQuery1, Occur.SHOULD);
+	    	
 	    		booleanQuery.add(boostedTermQuery5, Occur.SHOULD);
 		    
 	    }

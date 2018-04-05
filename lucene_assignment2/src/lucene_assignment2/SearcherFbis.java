@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
@@ -43,7 +44,7 @@ public class SearcherFbis {
 	    IndexSearcher searcher = new IndexSearcher(reader);
 //	    Similarity similarity = new MultiSimilarity(new Similarity[]{new BM25Similarity(),new ClassicSimilarity()});
 //	    searcher.setSimilarity(similarity);
-	    analyzer = new StandardAnalyzer();
+	    analyzer = new EnglishAnalyzer();
 	    //EnglishAnalyzer analyzer = new EnglishAnalyzer();
 	    booleanQuery = new BooleanQuery.Builder();
 	    if(queryTitle.contains("supercritical fluids"))

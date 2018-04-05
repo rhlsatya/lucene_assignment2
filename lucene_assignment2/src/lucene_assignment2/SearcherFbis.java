@@ -67,6 +67,8 @@ public class SearcherFbis {
         boostFields.put("fcontent",2f);
         boostFields.put("textcontent",5f);
         //"abs","date","fcontent"
+        //.1114
+        // .1117 is without the similarity for fr94
 //        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","abs","date","fcontent","textcontent"}, analyzer, boostFields);
 //        parser.setAllowLeadingWildcard(true);
 //        public BooleanQuery.Builder booleanQuery;

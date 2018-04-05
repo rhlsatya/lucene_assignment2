@@ -11,6 +11,7 @@ import java.nio.file.Paths;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
+import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.StringField;
@@ -58,6 +59,8 @@ public class IndexFt
 		IndexWriterConfig iwc = new IndexWriterConfig(analyzer);
 		IndexWriter writer = new IndexWriter(dir, iwc);
 		Document doc = new Document();
+		
+		
 		
 		InputStream DocNo = new ByteArrayInputStream(docNo.getBytes(StandardCharsets.UTF_8));
 		InputStream TextContent = new ByteArrayInputStream(textContent.getBytes(StandardCharsets.UTF_8));

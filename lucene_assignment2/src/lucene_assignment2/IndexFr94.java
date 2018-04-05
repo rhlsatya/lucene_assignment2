@@ -74,8 +74,8 @@ public class IndexFr94 {
 		Directory dir = FSDirectory.open(Paths.get(indexPath));
 		Analyzer analyzer = new EnglishAnalyzer();
 		IndexWriterConfig iwc = new IndexWriterConfig(analyzer);
-		Similarity similarity = new MultiSimilarity(new Similarity[]{new BM25Similarity(),new ClassicSimilarity()});
-		iwc.setSimilarity(similarity);
+//		Similarity similarity = new MultiSimilarity(new Similarity[]{new BM25Similarity(),new ClassicSimilarity()});
+//		iwc.setSimilarity(similarity);
 		
 		IndexWriter writer = new IndexWriter(dir, iwc);
 		Document doc = new Document();

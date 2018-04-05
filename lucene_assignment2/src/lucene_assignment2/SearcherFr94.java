@@ -17,6 +17,9 @@ import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.search.BooleanClause.Occur;
 import org.apache.lucene.search.similarities.BM25Similarity;
+import org.apache.lucene.search.similarities.ClassicSimilarity;
+import org.apache.lucene.search.similarities.MultiSimilarity;
+import org.apache.lucene.search.similarities.Similarity;
 import org.apache.lucene.store.FSDirectory;
 public class SearcherFr94 {
 	
@@ -34,7 +37,8 @@ public class SearcherFr94 {
 		String index = "/home/ubuntu/lucene_assignment2/lucene_assignment2/IndexedFiles/fr94/";
 	    IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(index)));
 	    IndexSearcher searcher = new IndexSearcher(reader);
-	    //searcher.setSimilarity(new BM25Similarity());
+	    Similarity similarity = new MultiSimilarity(new Similarity[]{new BM25Similarity(),new ClassicSimilarity()});
+	    searcher.setSimilarity(similarity);
 	    analyzer = new StandardAnalyzer();
 	    //EnglishAnalyzer analyzer = new EnglishAnalyzer();
 	    booleanQuery = new BooleanQuery.Builder();

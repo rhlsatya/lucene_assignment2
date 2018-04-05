@@ -42,7 +42,7 @@ public class SearcherFbis {
 	    IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(index)));
 	    IndexSearcher searcher = new IndexSearcher(reader);
 	    Similarity similarity = new MultiSimilarity(new Similarity[]{new BM25Similarity(),new ClassicSimilarity()});
-	    //searcher.setSimilarity(similarity);
+	    searcher.setSimilarity(similarity);
 	    analyzer = new StandardAnalyzer();
 	    //EnglishAnalyzer analyzer = new EnglishAnalyzer();
 	    booleanQuery = new BooleanQuery.Builder();

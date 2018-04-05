@@ -140,7 +140,7 @@ public class SearcherFbis {
 //	    Query boostedTermQuery2 = new BoostQuery(query2, 2);
 //	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 1.5);
 //	    Query boostedTermQuery4 = new BoostQuery(query4, (float) 1.5);
-	    Query boostedTermQuery5 = new BoostQuery(query5, 15);
+	    Query boostedTermQuery5 = new BoostQuery(query5, 10);
 	    
 	    
 	    

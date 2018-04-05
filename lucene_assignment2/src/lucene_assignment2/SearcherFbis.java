@@ -54,10 +54,10 @@ public class SearcherFbis {
         boostFields.put("heading",20f);
         //boostFields.put("abs",5f);
         //boostFields.put("date",2f);
-        boostFields.put("fcontent",2f);
+        //boostFields.put("fcontent",2f);
         boostFields.put("textcontent",25f);
-        //"abs","date"
-        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","fcontent","textcontent"}, analyzer, boostFields);
+        //"abs","date","fcontent"
+        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","textcontent"}, analyzer, boostFields);
         Query query1 = parser.parse(queryTitle);
 		Query query2 = parser.parse(queryDesc);
 		Query query3 = parser.parse(queryNarr);

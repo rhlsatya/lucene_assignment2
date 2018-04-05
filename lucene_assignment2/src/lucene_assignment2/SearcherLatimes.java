@@ -89,7 +89,7 @@ public class SearcherLatimes {
 	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java
         //./trec_eval/trec_eval qrels.assignment2.part1 results.txt
 		    
-		
+		//aa
 	    
 	
 	    

@@ -51,7 +51,7 @@ public class SearcherFbis {
 //	    addQuery(queryNarr, 0);
 	    
 	    Map<String, Float> boostFields = new HashMap<String, Float>();
-        boostFields.put("heading",120f);
+        boostFields.put("heading",60f);
         //boostFields.put("abs",5f);
         //boostFields.put("date",2f);
         //boostFields.put("fcontent",2f);

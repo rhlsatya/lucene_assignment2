@@ -69,16 +69,16 @@ public class SearcherFbis {
         //"abs","date","fcontent"
         MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","abs","date","fcontent","textcontent"}, analyzer, boostFields);
         parser.setAllowLeadingWildcard(true);
-        Query query1 = parser.parse(QueryParser.escape(queryTitle));
-		Query query2 = parser.parse(QueryParser.escape(queryDesc));
-		Query query3 = parser.parse(QueryParser.escape(queryNarr));
-		
-		Query boostedTermQuery1 = new BoostQuery(query1, (float) 16.5);
-	    Query boostedTermQuery2 = new BoostQuery(query2, 20);
-	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 12.5);
-	    booleanQuery.add(boostedTermQuery1, Occur.MUST);
-	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
-	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
+        Query query1 = parser.parse(QueryParser.escape(queryTitle + " " + queryDesc +  " " + queryNarr));
+//		Query query2 = parser.parse(QueryParser.escape(queryDesc));
+//		Query query3 = parser.parse(QueryParser.escape(queryNarr));
+//		
+//		Query boostedTermQuery1 = new BoostQuery(query1, (float) 16.5);
+//	    Query boostedTermQuery2 = new BoostQuery(query2, 20);
+//	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 12.5);
+//	    booleanQuery.add(boostedTermQuery1, Occur.MUST);
+//	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
+//	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
 		//0.1063
 	    //java lucene_assignment2.BuildQuery
 	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java
@@ -93,7 +93,7 @@ public class SearcherFbis {
 	    
 	       // TokenStream reader1 = null;
 	        //TokenStream stream = analyzer.tokenStream(null, new StringReader("author"));
-	    TopDocs docs = searcher.search(booleanQuery.build(), 1000);
+	    TopDocs docs = searcher.search(query1, 1000);//booleanQuery.build(), 1000);
 	    retDocs = docs.scoreDocs.length;
 	        System.out.println ("length of top docs: " + retDocs);
 	        String results[][] = new String[retDocs][2];

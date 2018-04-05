@@ -117,34 +117,34 @@ public class SearcherFbis {
 	public void addQuery(String query, int flag) throws ParseException
 	{
 		QueryParser parser1 = new QueryParser("heading", analyzer);
-		QueryParser parser2 = new QueryParser("abs", analyzer);
-		QueryParser parser3 = new QueryParser("date", analyzer);
-		QueryParser parser4 = new QueryParser("fcontent", analyzer);
+//		QueryParser parser2 = new QueryParser("abs", analyzer);
+//		QueryParser parser3 = new QueryParser("date", analyzer);
+//		QueryParser parser4 = new QueryParser("fcontent", analyzer);
 		QueryParser parser5 = new QueryParser("textcontent", analyzer);
 		
 		
 		
 		Query query1 = parser1.parse(query);
-		Query query2 = parser2.parse(query);
-		Query query3 = parser3.parse(query);
-		Query query4 = parser4.parse(query);
+//		Query query2 = parser2.parse(query);
+//		Query query3 = parser3.parse(query);
+//		Query query4 = parser4.parse(query);
 		Query query5 = parser5.parse(query); 
 		
 		
 		
 		
 	    Query boostedTermQuery1 = new BoostQuery(query1, (float) 6.5);
-	    Query boostedTermQuery2 = new BoostQuery(query2, 2);
-	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 1.5);
-	    Query boostedTermQuery4 = new BoostQuery(query4, (float) 1.5);
+//	    Query boostedTermQuery2 = new BoostQuery(query2, 2);
+//	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 1.5);
+//	    Query boostedTermQuery4 = new BoostQuery(query4, (float) 1.5);
 	    Query boostedTermQuery5 = new BoostQuery(query5, 5);
 	    
 	    
 	    
 	    booleanQuery.add(boostedTermQuery1, Occur.SHOULD);
-	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
-	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
-	    booleanQuery.add(boostedTermQuery4, Occur.SHOULD);
+//	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
+//	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
+//	    booleanQuery.add(boostedTermQuery4, Occur.SHOULD);
 	    
 	    if(flag == 1)
 	    {

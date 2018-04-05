@@ -61,12 +61,12 @@ public class SearcherFbis {
 	    
 	    Map<String, Float> boostFields = new HashMap<String, Float>();
         boostFields.put("heading",10f);
-        //boostFields.put("abs",5f);
-        //boostFields.put("date",2f);
-        //boostFields.put("fcontent",2f);
+        boostFields.put("abs",5f);
+        boostFields.put("date",2f);
+        boostFields.put("fcontent",2f);
         boostFields.put("textcontent",5f);
         //"abs","date","fcontent"
-        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","textcontent"}, analyzer, boostFields);
+        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","abs","date","fcontent","textcontent"}, analyzer, boostFields);
         Query query1 = parser.parse(queryTitle);
 		Query query2 = parser.parse(queryDesc);
 		Query query3 = parser.parse(queryNarr);
@@ -76,7 +76,7 @@ public class SearcherFbis {
 	    booleanQuery.add(boostedTermQuery1, Occur.MUST);
 	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
-		
+		//0.0730
 	    // 0.0843
         //.0920
         //.0994

@@ -38,7 +38,7 @@ public class SearcherFbis {
 		String index = "/home/ubuntu/lucene_assignment2/lucene_assignment2/IndexedFiles/fbis/";
 	    IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(index)));
 	    IndexSearcher searcher = new IndexSearcher(reader);
-	    //searcher.setSimilarity(new BM25Similarity());
+	    searcher.setSimilarity(new BM25Similarity());
 	    analyzer = new StandardAnalyzer();
 	    //EnglishAnalyzer analyzer = new EnglishAnalyzer();
 	    booleanQuery = new BooleanQuery.Builder();
@@ -47,19 +47,19 @@ public class SearcherFbis {
 //	    addQuery(queryNarr, 0);
 	    
 	    Map<String, Float> boostFields = new HashMap<String, Float>();
-        boostFields.put("heading",10f);
+        boostFields.put("heading",20f);
         boostFields.put("abs",5f);
         boostFields.put("date",2f);
         boostFields.put("fcontent",2f);
-        boostFields.put("textcontent",15f);
+        boostFields.put("textcontent",25f);
         MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","abs","date","fcontent","textcontent"}, analyzer, boostFields);
         Query query1 = parser.parse(queryTitle);
 		Query query2 = parser.parse(queryDesc);
 		Query query3 = parser.parse(queryNarr);
-		Query boostedTermQuery1 = new BoostQuery(query1, (float) 6.5);
+		Query boostedTermQuery1 = new BoostQuery(query1, (float) 16.5);
 	    Query boostedTermQuery2 = new BoostQuery(query2, 2);
-	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 6.5);
-	    booleanQuery.add(boostedTermQuery1, Occur.MUST);
+	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 2.5);
+	    booleanQuery.add(boostedTermQuery1, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
 		

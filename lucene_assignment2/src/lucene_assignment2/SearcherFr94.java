@@ -61,7 +61,7 @@ public class SearcherFr94 {
 		    //-------------------//
 		
 	    
-	
+	//as
 //	    Map<String, Float> boostFields = new HashMap<String, Float>();
 //        boostFields.put("doctitle",10f);
 //        boostFields.put("summary",50f);

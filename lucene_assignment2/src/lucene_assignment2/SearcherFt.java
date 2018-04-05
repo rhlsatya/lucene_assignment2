@@ -100,16 +100,16 @@ public class SearcherFt {
 	    
 	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
 	    
-	    if(flag == 1)
-	    {
-	    		booleanQuery.add(boostedTermQuery1, Occur.MUST);
-		    
-	    }
-	    else
-	    {
+//	    if(flag == 1)
+//	    {
+//	    		booleanQuery.add(boostedTermQuery1, Occur.MUST);
+//		    
+//	    }
+//	    else
+//	    {
 	    		booleanQuery.add(boostedTermQuery1, Occur.SHOULD);
 		    
-	    }
+	    //}
 	    
 	    
 	}

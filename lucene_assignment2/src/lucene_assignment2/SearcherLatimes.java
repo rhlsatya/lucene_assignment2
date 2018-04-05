@@ -113,7 +113,7 @@ public class SearcherLatimes {
 		
 //	    Query boostedTermQuery1 = new BoostQuery(query1, (float) 1.5);
 //	    Query boostedTermQuery2 = new BoostQuery(query2, 2);
-	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 12.5);
+	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 2.5);
 	    Query boostedTermQuery4 = new BoostQuery(query4, (float) 6.5);
 	    Query boostedTermQuery5 = new BoostQuery(query5, 2);
 //	    Query boostedTermQuery6 = new BoostQuery(query6, (float) 1.5);

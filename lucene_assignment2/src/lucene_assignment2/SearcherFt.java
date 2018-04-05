@@ -106,7 +106,7 @@ public class SearcherFt {
 		
 		
 	    Query boostedTermQuery1 = new BoostQuery(query1, (float) 1.5);
-	    Query boostedTermQuery2 = new BoostQuery(query2, 12);
+	    Query boostedTermQuery2 = new BoostQuery(query2, 2);
 	    
 	    
 	    

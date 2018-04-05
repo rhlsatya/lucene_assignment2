@@ -64,7 +64,7 @@ public class SearcherFr94 {
 	//as
 	    Map<String, Float> boostFields = new HashMap<String, Float>();
         boostFields.put("doctitle",10f);
-        boostFields.put("summary",100f);
+        boostFields.put("summary",50f);
     
         MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"doctitle","summary"}, analyzer, boostFields);
         parser.setAllowLeadingWildcard(true);

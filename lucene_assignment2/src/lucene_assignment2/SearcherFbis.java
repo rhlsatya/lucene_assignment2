@@ -59,7 +59,7 @@ public class SearcherFbis {
 		Query boostedTermQuery1 = new BoostQuery(query1, (float) 6.5);
 	    Query boostedTermQuery2 = new BoostQuery(query2, 2);
 	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 6.5);
-	    booleanQuery.add(boostedTermQuery1, Occur.SHOULD);
+	    booleanQuery.add(boostedTermQuery1, Occur.MUST);
 	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
 		

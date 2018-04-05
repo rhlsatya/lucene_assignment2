@@ -109,6 +109,7 @@ public class SearcherFbis {
 	            //System.out.println(thisDoc.get("docNo"));
 	        //System.out.println(thisDoc.get("docNo") + ": " + doc.score);
 	        //writer.write(queryNo + " " + thisDoc.get("index") + "\n");
+	        //as
 	    }
 	    
 	

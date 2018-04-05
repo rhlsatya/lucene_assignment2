@@ -51,7 +51,7 @@ public class SearcherFbis {
 //	    addQuery(queryNarr, 0);
 	    
 	    Map<String, Float> boostFields = new HashMap<String, Float>();
-        boostFields.put("heading",20f);
+        boostFields.put("heading",120f);
         //boostFields.put("abs",5f);
         //boostFields.put("date",2f);
         //boostFields.put("fcontent",2f);
@@ -64,7 +64,7 @@ public class SearcherFbis {
 		Query boostedTermQuery1 = new BoostQuery(query1, (float) 16.5);
 	    Query boostedTermQuery2 = new BoostQuery(query2, 2);
 	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 2.5);
-	    booleanQuery.add(boostedTermQuery1, Occur.MUST);
+	    booleanQuery.add(boostedTermQuery1, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
 		

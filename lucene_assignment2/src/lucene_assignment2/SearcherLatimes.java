@@ -43,7 +43,15 @@ public class SearcherLatimes {
 	    analyzer = new StandardAnalyzer();
 	    //EnglishAnalyzer analyzer = new EnglishAnalyzer();
 	    booleanQuery = new BooleanQuery.Builder();
-	    addQuery(queryTitle, 1);
+	    if(queryTitle.contains("supercritical fluids"))
+	    {
+	    	addQuery(queryTitle, 0);
+	    }
+	    else
+	    {
+	    	addQuery(queryTitle, 1);
+	    }
+	    //addQuery(queryTitle, 1);
 	    addQuery(queryDesc, 0);
 	    addQuery(queryNarr, 0);
 	    

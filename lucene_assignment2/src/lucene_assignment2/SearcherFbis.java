@@ -61,11 +61,11 @@ public class SearcherFbis {
 //	    addQuery(queryNarr, 0);
 	    
 	    Map<String, Float> boostFields = new HashMap<String, Float>();
-        boostFields.put("heading",30f);
+        boostFields.put("heading",20f);
 //        boostFields.put("abs",5f);
 //        boostFields.put("date",2f);
 //        boostFields.put("fcontent",2f);
-        boostFields.put("textcontent",105f);
+        boostFields.put("textcontent",125f);
         //"abs","date","fcontent"
         //.1114
         // .1117 is without the similarity for fr94

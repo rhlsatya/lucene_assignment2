@@ -2,12 +2,15 @@ package lucene_assignment2;
 
 import java.io.IOException;
 import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.BooleanQuery;
@@ -39,10 +42,28 @@ public class SearcherFbis {
 	    analyzer = new StandardAnalyzer();
 	    //EnglishAnalyzer analyzer = new EnglishAnalyzer();
 	    booleanQuery = new BooleanQuery.Builder();
-	    addQuery(queryTitle, 1);
-	    addQuery(queryDesc, 0);
-	    addQuery(queryNarr, 0);
+//	    addQuery(queryTitle, 1);
+//	    addQuery(queryDesc, 0);
+//	    addQuery(queryNarr, 0);
 	    
+	    Map<String, Float> boostFields = new HashMap<String, Float>();
+        boostFields.put("heading",10f);
+        boostFields.put("abs",5f);
+        boostFields.put("date",2f);
+        boostFields.put("fcontent",2f);
+        boostFields.put("textcontent",15f);
+        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"Headline","Content"}, analyzer, boostFields);
+        Query query1 = parser.parse(queryTitle);
+		Query query2 = parser.parse(queryDesc);
+		Query query3 = parser.parse(queryNarr);
+		Query boostedTermQuery1 = new BoostQuery(query1, (float) 6.5);
+	    Query boostedTermQuery2 = new BoostQuery(query2, 2);
+	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 6.5);
+	    booleanQuery.add(boostedTermQuery1, Occur.SHOULD);
+	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
+	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
+		
+        
 		    //-------------------//
 		
 	    
@@ -82,7 +103,15 @@ public class SearcherFbis {
 		QueryParser parser4 = new QueryParser("fcontent", analyzer);
 		QueryParser parser5 = new QueryParser("textcontent", analyzer);
 		
-		    
+		Map<String, Float> boostFields = new HashMap<String, Float>();
+        boostFields.put("heading",10f);
+        boostFields.put("abs",5f);
+        boostFields.put("date",2f);
+        boostFields.put("fcontent",2f);
+        boostFields.put("textcontent",15f);
+        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"Headline","Content"}, analyzer, boostFields);
+
+		
 		Query query1 = parser1.parse(query);
 		Query query2 = parser2.parse(query);
 		Query query3 = parser3.parse(query);

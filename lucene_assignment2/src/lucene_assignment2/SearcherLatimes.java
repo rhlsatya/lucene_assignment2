@@ -63,7 +63,7 @@ public class SearcherLatimes {
 	    
 	    
 	    Map<String, Float> boostFields = new HashMap<String, Float>();
-        boostFields.put("headline",30f);
+        boostFields.put("headline",10f);
         boostFields.put("subject",30f);
         boostFields.put("textcontent",255f);
         boostFields.put("correction",15f);
@@ -73,7 +73,7 @@ public class SearcherLatimes {
 
         //3020 - 3038
       
-        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","subject","textcontent","correction"}, analyzer, boostFields);
+        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"headline","subject","textcontent","correction"}, analyzer, boostFields);
         parser.setAllowLeadingWildcard(true);
         
         Query query1 = parser.parse(QueryParser.escape(queryTitle));

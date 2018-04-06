@@ -66,13 +66,13 @@ public class SearcherFr94 {
         boostFields.put("doctitle",30f);
         boostFields.put("summary",75f);
         boostFields.put("supplem",10f);
-        
+        boostFields.put("textother",10f);
         
         //java lucene_assignment2.BuildQuery
 	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java
         //./trec_eval/trec_eval qrels.assignment2.part1 results.txt
     
-        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"doctitle","summary", "supplem"}, analyzer, boostFields);
+        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"doctitle","summary", "textother","supplem"}, analyzer, boostFields);
         parser.setAllowLeadingWildcard(true);
         
         Query query1 = parser.parse(queryTitle);

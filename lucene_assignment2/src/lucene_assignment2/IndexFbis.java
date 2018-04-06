@@ -68,7 +68,7 @@ public class IndexFbis {
 		String indexPath = "/Users/rahulsatya/Desktop/IndexedFiles/fbis";
 		Directory dir = FSDirectory.open(Paths.get(indexPath));
 		//Analyzer analyzer = new EnglishAnalyzer();
-		final Analyzer analyzer = new Analyzer() {
+		Analyzer analyzer = new Analyzer() {
 			
 			@Override
 		    protected TokenStreamComponents createComponents(String s) {

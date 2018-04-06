@@ -61,11 +61,11 @@ public class SearcherFbis {
 //	    addQuery(queryNarr, 0);
 	    
 	    Map<String, Float> boostFields = new HashMap<String, Float>();
-        boostFields.put("heading",20f);
+        boostFields.put("heading",30f);
 //        boostFields.put("abs",5f);
 //        boostFields.put("date",2f);
 //        boostFields.put("fcontent",2f);
-        boostFields.put("textcontent",235f);
+        boostFields.put("textcontent",245f);
         
         //java lucene_assignment2.BuildQuery
 	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java

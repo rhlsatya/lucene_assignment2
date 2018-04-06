@@ -5,12 +5,23 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.LowerCaseFilter;
+import org.apache.lucene.analysis.StopFilter;
+import org.apache.lucene.analysis.TokenStream;
+import org.apache.lucene.analysis.Tokenizer;
+import org.apache.lucene.analysis.Analyzer.TokenStreamComponents;
 import org.apache.lucene.analysis.core.LowerCaseFilterFactory;
 import org.apache.lucene.analysis.custom.CustomAnalyzer;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
+import org.apache.lucene.analysis.en.EnglishMinimalStemFilter;
+import org.apache.lucene.analysis.en.EnglishPossessiveFilter;
+import org.apache.lucene.analysis.en.KStemFilter;
+import org.apache.lucene.analysis.en.PorterStemFilter;
 import org.apache.lucene.analysis.en.PorterStemFilterFactory;
+import org.apache.lucene.analysis.miscellaneous.RemoveDuplicatesTokenFilter;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.analysis.standard.StandardFilterFactory;
+import org.apache.lucene.analysis.standard.StandardTokenizer;
 import org.apache.lucene.analysis.standard.StandardTokenizerFactory;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
@@ -51,11 +62,23 @@ public class SearcherFr94 {
 	    //analyzer = new EnglishAnalyzer();
 	    //EnglishAnalyzer analyzer = new EnglishAnalyzer();
 	    
-	    analyzer = CustomAnalyzer.builder()
-	    		  .withTokenizer(StandardTokenizerFactory.class)
-	    		  .addTokenFilter(StandardFilterFactory.class)
-	    		  .addTokenFilter(LowerCaseFilterFactory.class)
-	    		  .addTokenFilter(PorterStemFilterFactory.class).build();
+	    analyzer = new Analyzer() {
+			
+			@Override
+		    protected TokenStreamComponents createComponents(String s) {
+		        Tokenizer tokenizer = new StandardTokenizer();
+		        TokenStream filter = new RemoveDuplicatesTokenFilter(tokenizer);
+		        
+		        filter = new LowerCaseFilter(tokenizer);
+		        filter = new EnglishMinimalStemFilter(filter);
+		        filter = new EnglishPossessiveFilter(filter);
+		        filter = new PorterStemFilter(filter);
+		        filter = new KStemFilter(filter);
+		        //filter = new ShingleMatrixFilter(filter, 2, 2);
+		        filter = new StopFilter(filter, EnglishAnalyzer.getDefaultStopSet());
+		        return new TokenStreamComponents(tokenizer, filter);
+		    }
+		};
 	    
 	    booleanQuery = new BooleanQuery.Builder();
 	    

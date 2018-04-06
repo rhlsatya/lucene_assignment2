@@ -63,7 +63,7 @@ public class SearcherFt {
 		
 	    
 	    Map<String, Float> boostFields = new HashMap<String, Float>();
-        boostFields.put("heading",550f);
+        boostFields.put("headline",20f);
 //        boostFields.put("abs",5f);
 //        boostFields.put("date",2f);
         
@@ -76,7 +76,7 @@ public class SearcherFt {
 	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java
         //./trec_eval/trec_eval qrels.assignment2 results.txt
 	    
-        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","textcontent"}, analyzer, boostFields);
+        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"headline","textcontent"}, analyzer, boostFields);
         parser.setAllowLeadingWildcard(true);
         
         Query query1 = parser.parse(QueryParser.escape(queryTitle));

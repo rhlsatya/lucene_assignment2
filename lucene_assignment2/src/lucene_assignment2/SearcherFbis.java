@@ -11,11 +11,13 @@ import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
+import org.apache.lucene.index.Term;
 import org.apache.lucene.queryparser.classic.MultiFieldQueryParser;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.BooleanQuery;
 import org.apache.lucene.search.BoostQuery;
+import org.apache.lucene.search.FuzzyQuery;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
@@ -77,7 +79,8 @@ public class SearcherFbis {
         MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","fcontent","textcontent"}, analyzer, boostFields);
         parser.setAllowLeadingWildcard(true);
         
-        Query query1 = parser.parse(QueryParser.escape(queryTitle));
+        //Query query1 = parser.parse(QueryParser.escape(queryTitle));
+        Query query1 = new FuzzyQuery(new Term(queryTitle));
 		Query query2 = parser.parse(QueryParser.escape(queryDesc));
 		Query query3 = parser.parse(QueryParser.escape(queryNarr));
 		

@@ -63,7 +63,7 @@ public class SearcherLatimes {
 	    
 	    
 	    Map<String, Float> boostFields = new HashMap<String, Float>();
-        boostFields.put("headline",15f);
+        boostFields.put("headline",5f);
         boostFields.put("subject",30f);
         boostFields.put("textcontent",255f);
         boostFields.put("correction",15f);

@@ -95,6 +95,7 @@ public class SearcherFbis {
         boostFields.put("fcontent",45f);
 //        boostFields.put("date",2f);
        
+       // boostFields.put("textcontent",245f); - before the custom analyser
         boostFields.put("textcontent",245f);
         
         //java lucene_assignment2.BuildQuery

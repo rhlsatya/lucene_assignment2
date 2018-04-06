@@ -65,7 +65,7 @@ public class SearcherFbis {
 //        boostFields.put("abs",5f);
 //        boostFields.put("date",2f);
 //        boostFields.put("fcontent",2f);
-        boostFields.put("textcontent",240f);
+        boostFields.put("textcontent",235f);
         
         //java lucene_assignment2.BuildQuery
 	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java

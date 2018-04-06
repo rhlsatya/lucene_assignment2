@@ -64,11 +64,11 @@ public class SearcherLatimes {
 	    
 	    Map<String, Float> boostFields = new HashMap<String, Float>();
         boostFields.put("heading",20f);
-        boostFields.put("subject",40f);
+        boostFields.put("subject",10f);
         boostFields.put("textcontent",255f);
         //java lucene_assignment2.BuildQuery
 	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java
-        //
+        //./trec_eval/trec_eval qrels.assignment2.part1 results.txt
 
         
       

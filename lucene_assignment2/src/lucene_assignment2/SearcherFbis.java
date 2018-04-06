@@ -79,9 +79,9 @@ public class SearcherFbis {
         MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","fcontent","textcontent"}, analyzer, boostFields);
         parser.setAllowLeadingWildcard(true);
         
-        //Query query1 = parser.parse(QueryParser.escape(queryTitle));
-        Query query1 = new FuzzyQuery(new Term(queryTitle));
-		Query query2 = parser.parse(QueryParser.escape(queryDesc));
+        Query query1 = parser.parse(QueryParser.escape(queryTitle));
+        Query query2 = new FuzzyQuery(new Term(queryDesc));
+		//Query query2 = parser.parse(QueryParser.escape(queryDesc));
 		Query query3 = parser.parse(QueryParser.escape(queryNarr));
 		
 		Query boostedTermQuery1 = new BoostQuery(query1, (float) 30.5);

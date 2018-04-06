@@ -65,7 +65,12 @@ public class SearcherFbis {
 //        boostFields.put("abs",5f);
 //        boostFields.put("date",2f);
 //        boostFields.put("fcontent",2f);
-        boostFields.put("textcontent",275f);
+        boostFields.put("textcontent",205f);
+        
+        //java lucene_assignment2.BuildQuery
+	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java
+        //./trec_eval/trec_eval qrels.assignment2.part1 results.txt
+        
         //"abs","date","fcontent"
         //.1114
         // .1117 is without the similarity for fr94
@@ -83,9 +88,7 @@ public class SearcherFbis {
 	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
 		//0.1063
-	    //java lucene_assignment2.BuildQuery
-	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java
-        //./trec_eval/trec_eval qrels.assignment2.part1 results.txt
+	   
 		    //-------------------//
 		
 	    

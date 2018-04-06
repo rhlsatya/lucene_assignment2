@@ -66,7 +66,7 @@ public class SearcherFr94 {
         boostFields.put("doctitle",25f);
         boostFields.put("summary",75f);
         boostFields.put("supplem",10f);
-        boostFields.put("textother",22f);
+        boostFields.put("textother",27f);
         
         //java lucene_assignment2.BuildQuery
 	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java

@@ -62,7 +62,7 @@ public class SearcherFbis {
 	    
 	    Map<String, Float> boostFields = new HashMap<String, Float>();
         boostFields.put("heading",10f);
-//        boostFields.put("abs",5f);
+        boostFields.put("abs",10f);
 //        boostFields.put("date",2f);
        
         boostFields.put("textcontent",245f);
@@ -74,7 +74,7 @@ public class SearcherFbis {
         //"abs","date","fcontent"
         //.1114
         // .1117 is without the similarity for fr94
-        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","textcontent"}, analyzer, boostFields);
+        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","abs","textcontent"}, analyzer, boostFields);
         parser.setAllowLeadingWildcard(true);
         
         Query query1 = parser.parse(QueryParser.escape(queryTitle));

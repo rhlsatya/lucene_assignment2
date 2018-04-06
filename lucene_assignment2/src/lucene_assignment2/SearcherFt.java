@@ -63,7 +63,7 @@ public class SearcherFt {
 		
 	    
 	    Map<String, Float> boostFields = new HashMap<String, Float>();
-        boostFields.put("headline",25f);
+        boostFields.put("headline",35f);
 //        boostFields.put("abs",5f);
 //        boostFields.put("date",2f);
         

@@ -5,12 +5,24 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Paths;
 
 import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.LowerCaseFilter;
+import org.apache.lucene.analysis.StopFilter;
+import org.apache.lucene.analysis.TokenStream;
+import org.apache.lucene.analysis.Tokenizer;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
+import org.apache.lucene.analysis.en.EnglishMinimalStemFilter;
+import org.apache.lucene.analysis.en.EnglishPossessiveFilter;
+import org.apache.lucene.analysis.en.KStemFilter;
+import org.apache.lucene.analysis.en.PorterStemFilter;
+import org.apache.lucene.analysis.miscellaneous.RemoveDuplicatesTokenFilter;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
+import org.apache.lucene.analysis.standard.StandardTokenizer;
+import org.apache.lucene.analysis.synonym.SynonymFilter;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.StringField;
@@ -55,7 +67,24 @@ public class IndexFbis {
 	{
 		String indexPath = "/Users/rahulsatya/Desktop/IndexedFiles/fbis";
 		Directory dir = FSDirectory.open(Paths.get(indexPath));
-		Analyzer analyzer = new EnglishAnalyzer();
+		//Analyzer analyzer = new EnglishAnalyzer();
+		final Analyzer analyzer = new Analyzer() {
+			
+			@Override
+		    protected TokenStreamComponents createComponents(String s) {
+		        Tokenizer tokenizer = new StandardTokenizer();
+		        TokenStream filter = new RemoveDuplicatesTokenFilter(tokenizer);
+		        
+		        filter = new LowerCaseFilter(tokenizer);
+		        filter = new EnglishMinimalStemFilter(filter);
+		        filter = new EnglishPossessiveFilter(filter);
+		        filter = new PorterStemFilter(filter);
+		        filter = new KStemFilter(filter);
+		        //filter = new ShingleMatrixFilter(filter, 2, 2);
+		        filter = new StopFilter(filter, EnglishAnalyzer.getDefaultStopSet());
+		        return new TokenStreamComponents(tokenizer, filter);
+		    }
+		};
 		IndexWriterConfig iwc = new IndexWriterConfig(analyzer);
 		Similarity similarity = new MultiSimilarity(new Similarity[]{new BM25Similarity(),new ClassicSimilarity()});
 		iwc.setSimilarity(similarity);

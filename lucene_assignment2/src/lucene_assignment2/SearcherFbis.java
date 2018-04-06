@@ -6,8 +6,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.LowerCaseFilter;
+import org.apache.lucene.analysis.StopFilter;
+import org.apache.lucene.analysis.TokenStream;
+import org.apache.lucene.analysis.Tokenizer;
+import org.apache.lucene.analysis.Analyzer.TokenStreamComponents;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
+import org.apache.lucene.analysis.en.EnglishMinimalStemFilter;
+import org.apache.lucene.analysis.en.EnglishPossessiveFilter;
+import org.apache.lucene.analysis.en.KStemFilter;
+import org.apache.lucene.analysis.en.PorterStemFilter;
+import org.apache.lucene.analysis.miscellaneous.RemoveDuplicatesTokenFilter;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
+import org.apache.lucene.analysis.standard.StandardTokenizer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
 import org.apache.lucene.index.IndexReader;
@@ -46,7 +57,24 @@ public class SearcherFbis {
 	    IndexSearcher searcher = new IndexSearcher(reader);
 	    Similarity similarity = new MultiSimilarity(new Similarity[]{new BM25Similarity(),new ClassicSimilarity()});
 	    searcher.setSimilarity(similarity);
-	    analyzer = new EnglishAnalyzer();
+	    //analyzer = new EnglishAnalyzer();
+	    analyzer = new Analyzer() {
+			
+			@Override
+		    protected TokenStreamComponents createComponents(String s) {
+		        Tokenizer tokenizer = new StandardTokenizer();
+		        TokenStream filter = new RemoveDuplicatesTokenFilter(tokenizer);
+		        
+		        filter = new LowerCaseFilter(tokenizer);
+		        filter = new EnglishMinimalStemFilter(filter);
+		        filter = new EnglishPossessiveFilter(filter);
+		        filter = new PorterStemFilter(filter);
+		        filter = new KStemFilter(filter);
+		        //filter = new ShingleMatrixFilter(filter, 2, 2);
+		        filter = new StopFilter(filter, EnglishAnalyzer.getDefaultStopSet());
+		        return new TokenStreamComponents(tokenizer, filter);
+		    }
+		};
 	    //EnglishAnalyzer analyzer = new EnglishAnalyzer();
 	    booleanQuery = new BooleanQuery.Builder();
 //	    if(queryTitle.contains("supercritical fluids"))

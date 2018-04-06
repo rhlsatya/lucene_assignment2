@@ -9,8 +9,13 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Paths;
 
 import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.core.LowerCaseFilterFactory;
+import org.apache.lucene.analysis.custom.CustomAnalyzer;
 import org.apache.lucene.analysis.en.EnglishAnalyzer;
+import org.apache.lucene.analysis.en.PorterStemFilterFactory;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
+import org.apache.lucene.analysis.standard.StandardFilterFactory;
+import org.apache.lucene.analysis.standard.StandardTokenizerFactory;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.StringField;
@@ -72,7 +77,13 @@ public class IndexFr94 {
 	{
 		String indexPath = "/Users/rahulsatya/Desktop/IndexedFiles/fr94/";
 		Directory dir = FSDirectory.open(Paths.get(indexPath));
-		Analyzer analyzer = new EnglishAnalyzer();
+		//Analyzer analyzer = new EnglishAnalyzer();
+		Analyzer analyzer = CustomAnalyzer.builder()
+	    		  .withTokenizer(StandardTokenizerFactory.class)
+	    		  .addTokenFilter(StandardFilterFactory.class)
+	    		  .addTokenFilter(LowerCaseFilterFactory.class)
+	    		  .addTokenFilter(PorterStemFilterFactory.class).build();
+		
 		IndexWriterConfig iwc = new IndexWriterConfig(analyzer);
 		Similarity similarity = new MultiSimilarity(new Similarity[]{new BM25Similarity(),new ClassicSimilarity()});
 		iwc.setSimilarity(similarity);

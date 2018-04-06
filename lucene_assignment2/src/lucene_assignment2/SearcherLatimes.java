@@ -66,12 +66,12 @@ public class SearcherLatimes {
         boostFields.put("heading",10f);
         boostFields.put("subject",30f);
         boostFields.put("textcontent",255f);
-        boostFields.put("correction",75f);
+        boostFields.put("correction",55f);
         //java lucene_assignment2.BuildQuery
 	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java
         //./trec_eval/trec_eval qrels.assignment2.part1 results.txt
 
-        
+        //3020 - 3038
       
         MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","subject","textcontent", "correction"}, analyzer, boostFields);
         parser.setAllowLeadingWildcard(true);

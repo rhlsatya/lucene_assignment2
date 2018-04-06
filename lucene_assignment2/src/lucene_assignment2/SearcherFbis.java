@@ -62,7 +62,7 @@ public class SearcherFbis {
 	    
 	    Map<String, Float> boostFields = new HashMap<String, Float>();
         boostFields.put("heading",10f);
-        boostFields.put("abs",10f);
+        boostFields.put("abs",20f);
 //        boostFields.put("date",2f);
        
         boostFields.put("textcontent",245f);

@@ -89,6 +89,7 @@ public class SearcherFt {
         //./trec_eval/trec_eval qrels.assignment2.part1 results.txt
 	    
 	   
+	    //aa
 	    
 	    
 	       // TokenStream reader1 = null;

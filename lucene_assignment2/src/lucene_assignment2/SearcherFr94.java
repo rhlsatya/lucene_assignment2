@@ -58,15 +58,14 @@ public class SearcherFr94 {
 	    Map<String, Float> boostFields = new HashMap<String, Float>();
         boostFields.put("doctitle",25f);
         boostFields.put("summary",75f);
-        //boostFields.put("supplem",10f);
+        boostFields.put("supplem",10f);
         boostFields.put("textother",25f);
         
         //java lucene_assignment2.BuildQuery
 	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java
         //./trec_eval/trec_eval qrels.assignment2 results.txt
-    //,"supplem"
-        
-        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"doctitle","summary", "textother"}, analyzer, boostFields);
+    
+        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"doctitle","summary", "textother","supplem", "usDept"}, analyzer, boostFields);
         parser.setAllowLeadingWildcard(true);
         
         Query query1 = parser.parse(queryTitle);

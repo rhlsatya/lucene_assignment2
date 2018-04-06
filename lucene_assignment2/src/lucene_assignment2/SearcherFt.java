@@ -67,10 +67,15 @@ public class SearcherFt {
 //        boostFields.put("abs",5f);
 //        boostFields.put("date",2f);
         
-        boostFields.put("textcontent",175f);
+        boostFields.put("textcontent",375f);
         //"abs","date","fcontent"
         //.1114
         // .1117 is without the similarity for fr94
+        
+        //java lucene_assignment2.BuildQuery
+	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java
+        //./trec_eval/trec_eval qrels.assignment2 results.txt
+	    
         MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","textcontent"}, analyzer, boostFields);
         parser.setAllowLeadingWildcard(true);
         
@@ -84,10 +89,7 @@ public class SearcherFt {
 	    booleanQuery.add(boostedTermQuery1, Occur.MUST);
 	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
 	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
-	    //java lucene_assignment2.BuildQuery
-	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java
-        //./trec_eval/trec_eval qrels.assignment2.part1 results.txt
-	    
+	   
 	   
 	    //aa
 	    

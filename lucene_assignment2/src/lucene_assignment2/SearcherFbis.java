@@ -56,38 +56,38 @@ public class SearcherFbis {
 //	    	addQuery(queryTitle, 1);
 //	    }
 //	    
-	    addQuery(queryTitle, 1);
-	    addQuery(queryDesc, 0);
-	    addQuery(queryNarr, 0);
+//	    addQuery(queryTitle, 1);
+//	    addQuery(queryDesc, 0);
+//	    addQuery(queryNarr, 0);
 	    
-//	    Map<String, Float> boostFields = new HashMap<String, Float>();
-//        boostFields.put("heading",10f);
-////        boostFields.put("abs",550f);
-////        boostFields.put("date",2f);
-//       
-//        boostFields.put("textcontent",245f);
-//        
-//        //java lucene_assignment2.BuildQuery
-//	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java
-//        //./trec_eval/trec_eval qrels.assignment2.part1 results.txt
-//        
-//        //"abs","date","fcontent"
-//        //.1114
-//        // .1117 is without the similarity for fr94
-//        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","textcontent"}, analyzer, boostFields);
-//        parser.setAllowLeadingWildcard(true);
-//        
-//        Query query1 = parser.parse(QueryParser.escape(queryTitle));
-//		Query query2 = parser.parse(QueryParser.escape(queryDesc));
-//		Query query3 = parser.parse(QueryParser.escape(queryNarr));
-//		
-//		Query boostedTermQuery1 = new BoostQuery(query1, (float) 30.5);
-//	    Query boostedTermQuery2 = new BoostQuery(query2, 30);
-//	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 7.5);
-//	    booleanQuery.add(boostedTermQuery1, Occur.MUST);
-//	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
-//	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
-//		//0.1063
+	    Map<String, Float> boostFields = new HashMap<String, Float>();
+        boostFields.put("heading",10f);
+//        boostFields.put("abs",550f);
+//        boostFields.put("date",2f);
+       
+        boostFields.put("textcontent",245f);
+        
+        //java lucene_assignment2.BuildQuery
+	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java
+        //./trec_eval/trec_eval qrels.assignment2 results.txt
+        
+        //"abs","date","fcontent"
+        //.1114
+        // .1117 is without the similarity for fr94
+        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","textcontent"}, analyzer, boostFields);
+        parser.setAllowLeadingWildcard(true);
+        
+        Query query1 = parser.parse(QueryParser.escape(queryTitle));
+		Query query2 = parser.parse(QueryParser.escape(queryDesc));
+		Query query3 = parser.parse(QueryParser.escape(queryNarr));
+		
+		Query boostedTermQuery1 = new BoostQuery(query1, (float) 30.5);
+	    Query boostedTermQuery2 = new BoostQuery(query2, 30);
+	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 7.5);
+	    booleanQuery.add(boostedTermQuery1, Occur.MUST);
+	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
+	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
+		//0.1063
 	   
 		    //-------------------//
 		

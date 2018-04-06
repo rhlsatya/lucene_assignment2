@@ -47,38 +47,38 @@ public class SearcherFr94 {
 	    //EnglishAnalyzer analyzer = new EnglishAnalyzer();
 	    booleanQuery = new BooleanQuery.Builder();
 	    
-	    addQuery(queryTitle, 1);
-	    addQuery(queryDesc, 0);
-	    addQuery(queryNarr, 0);
+//	    addQuery(queryTitle, 1);
+//	    addQuery(queryDesc, 0);
+//	    addQuery(queryNarr, 0);
 	    
 		    //-------------------//
 		
 	    
 	//as
-//	    Map<String, Float> boostFields = new HashMap<String, Float>();
-//        boostFields.put("doctitle",25f);
-//        boostFields.put("summary",75f);
-//        boostFields.put("supplem",10f);
-//        boostFields.put("textother",25f);
-//        
-//        //java lucene_assignment2.BuildQuery
-//	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java
-//        //./trec_eval/trec_eval qrels.assignment2.part1 results.txt
-//    
-//        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"doctitle","summary", "textother","supplem"}, analyzer, boostFields);
-//        parser.setAllowLeadingWildcard(true);
-//        
-//        Query query1 = parser.parse(queryTitle);
-//		Query query2 = parser.parse(queryDesc);
-//		Query query3 = parser.parse(queryNarr);
-//		
-//		Query boostedTermQuery1 = new BoostQuery(query1, (float) 30.5);
-//	    Query boostedTermQuery2 = new BoostQuery(query2, 30);
-//	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 7.5);
-//	    booleanQuery.add(boostedTermQuery1, Occur.MUST);
-//	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
-//	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
-//	    
+	    Map<String, Float> boostFields = new HashMap<String, Float>();
+        boostFields.put("doctitle",25f);
+        boostFields.put("summary",75f);
+        boostFields.put("supplem",10f);
+        boostFields.put("textother",25f);
+        
+        //java lucene_assignment2.BuildQuery
+	    //javac SearcherFr94.java SearcherFbis.java SearcherLatimes.java SearcherFt.java BuildQuery.java
+        //./trec_eval/trec_eval qrels.assignment2.part1 results.txt
+    
+        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"doctitle","summary", "textother","supplem"}, analyzer, boostFields);
+        parser.setAllowLeadingWildcard(true);
+        
+        Query query1 = parser.parse(queryTitle);
+		Query query2 = parser.parse(queryDesc);
+		Query query3 = parser.parse(queryNarr);
+		
+		Query boostedTermQuery1 = new BoostQuery(query1, (float) 30.5);
+	    Query boostedTermQuery2 = new BoostQuery(query2, 30);
+	    Query boostedTermQuery3 = new BoostQuery(query3, (float) 7.5);
+	    booleanQuery.add(boostedTermQuery1, Occur.MUST);
+	    booleanQuery.add(boostedTermQuery2, Occur.SHOULD);
+	    booleanQuery.add(boostedTermQuery3, Occur.SHOULD);
+	    
 //	    
 	    
 	    

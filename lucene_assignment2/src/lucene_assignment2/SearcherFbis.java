@@ -64,7 +64,7 @@ public class SearcherFbis {
         boostFields.put("heading",10f);
 //        boostFields.put("abs",5f);
 //        boostFields.put("date",2f);
-//        boostFields.put("fcontent",2f);
+        boostFields.put("fcontent",20f);
         boostFields.put("textcontent",245f);
         
         //java lucene_assignment2.BuildQuery
@@ -74,7 +74,7 @@ public class SearcherFbis {
         //"abs","date","fcontent"
         //.1114
         // .1117 is without the similarity for fr94
-        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading","textcontent"}, analyzer, boostFields);
+        MultiFieldQueryParser parser = new MultiFieldQueryParser(new String[]{"heading", "fcontent","textcontent"}, analyzer, boostFields);
         parser.setAllowLeadingWildcard(true);
         
         Query query1 = parser.parse(QueryParser.escape(queryTitle));
